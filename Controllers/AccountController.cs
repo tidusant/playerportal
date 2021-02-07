@@ -23,7 +23,7 @@ namespace PlayerPortal.Controllers
         //public AccountController()
         //    : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
         //{
-        //}
+        //}test
         public AccountController()
             //: this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
         {
