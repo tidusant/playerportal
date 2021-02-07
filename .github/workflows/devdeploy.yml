@@ -52,7 +52,7 @@ jobs:
         if: ${{ contains(steps.checkdeploy.outputs.isdeploy, 'true') }}
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 4.5.x
+          dotnet-version: 4.5.1
       - name: build
         if: ${{ contains(steps.checkdeploy.outputs.isdeploy, 'true') }}
         run: |
