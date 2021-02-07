@@ -57,6 +57,7 @@ jobs:
         if: ${{ contains(steps.checkdeploy.outputs.isdeploy, 'true') }}
         run: |
           dotnet restore
+          nuget restore
           dotnet build --no-restore
           dotnet test --no-build --verbosity normal
           dotnet publish --no-build -o release
