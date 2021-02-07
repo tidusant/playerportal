@@ -1,0 +1,87 @@
+name: Dev Deployment
+env:
+  SERVER: test-dev
+  PREFIX: playerportal
+  COMMIT_FILTER: DEPLOY
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+# Map a step output to a job output
+    outputs:
+      isdeploy: ${{steps.check.outputs.isdeploy}}
+      apppath: ${{steps.check.outputs.apppath}}  
+      appname: ${{steps.check.outputs.appname}}  
+      branch: ${{steps.check.outputs.branch}}
+    # Steps represent a sequence of tasks that will be executed as part of the jobtest
+    steps:
+      - id: check
+        name: check is Deploy    
+        run: |           
+          echo ${GITHUB_EVENT_PATH}
+          echo ${GITHUB_WORKSPACE}
+          #Set branch name
+          echo "::set-output name=branch::$(echo ${GITHUB_REF#refs/heads/})"
+          # Get last commit message
+          readonly local last_commit_log="${{github.event.head_commit.message}}"
+          echo "last commit log: $last_commit_log"
+          
+          #readonly local result=$(echo "$last_commit_log" | grep -E "^${COMMIT_FILTER}" )
+          readonly local result1=$(echo "$last_commit_log" | cut -d" " -f1 )
+          readonly local result2=$(echo "$last_commit_log" | cut -d" " -f2 )
+
+          if [ "$result1" == ${COMMIT_FILTER} ]; then            
+            echo "the last commit log contains \"$COMMIT_FILTER\", start building"            
+            echo "::set-output name=isdeploy::true"
+            echo "::set-output name=apppath::$result2"
+            echo "::set-output name=appname::${result2//\//\-}"
+            ${SLACK_COMMAND} "{\"text\":\"${{env.PREFIX}} $result2 Start deploy !\"}" ${{secrets.SLACK_WEBHOOK_URL}}
+          else            
+            echo "not a DEPLOY command"
+            echo "::set-output name=isdeploy::false"
+          fi
+      - name: checkout
+        if: ${{ contains(steps.checkdeploy.outputs.isdeploy, 'true') }}
+        uses: actions/checkout@v2        
+      - name: setup dotnet
+        if: ${{ contains(steps.checkdeploy.outputs.isdeploy, 'true') }}
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - name: build
+        if: ${{ contains(steps.checkdeploy.outputs.isdeploy, 'true') }}
+        run: |
+          dotnet restore
+          dotnet build --no-restore
+          dotnet test --no-build --verbosity normal
+          dotnet publish --no-build -o release
+          
+                   
+          echo "====== Docker build ========"
+          echo ${{ secrets.DOCKER_TOKEN }} | docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin 
+          docker build -t ${{steps.checkdeploy.outputs.appname}} .
+          docker tag ${{steps.checkdeploy.outputs.appname}} ${{ secrets.DOCKER_USERNAME }}/${PREFIX}-${{steps.checkdeploy.outputs.appname}}
+          docker push ${{ secrets.DOCKER_USERNAME }}/${PREFIX}-${{steps.checkdeploy.outputs.appname}}
+          
+  deploy:
+    if: ${{ contains(needs.check.outputs.isdeploy, 'true') }}
+    # The type of runner
+    runs-on: self-hosted
+    needs: [build]
+    steps:
+    - name: Kubernetes delete secrect
+      run: sudo kubectl -n ${SERVER} delete secret mysecret --ignore-not-found
+    - name: Kubernetes create secrect
+      run: sudo kubectl -n ${SERVER} create secret generic mysecret --from-literal=devdb_url='${{ secrets.DEV_DEPLOY_DB_URI }}'   --from-literal=devdb_name='${{ secrets.DEV_DEPLOY_DB_NAME }}' 
+    - name: Kubernetes deploy
+      run: |
+        sudo kubectl apply -f https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${{needs.check.outputs.branch}}/${{needs.check.outputs.apppath}}/k8s_devdeploy.yml
+        #force pull latest image
+        sudo kubectl -n ${SERVER} rollout restart deploy ${PREFIX}-${{needs.check.outputs.appname}}
+        ${SLACK_COMMAND} '{"text":"Kubernetes deploy done!"}' ${{secrets.SLACK_WEBHOOK_URL}}
