@@ -1,0 +1,278 @@
+﻿@{
+    ViewBag.Title = "Lotto";
+    Layout = "~/Views/Shared/_KioskLayout.cshtml";
+}
+<div id="lotto-form">
+    <!-- Page Content-->
+    <main class="page-content">
+        @Html.Hidden("Login", @Url.Action("login", "Account"))
+        @Html.Hidden("lobby", @Url.Action("lobby", "home"))
+        @Html.Hidden("APIURL", @System.Configuration.ConfigurationManager.AppSettings["APIUrl"])
+        <section>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="~/">home</a></li>
+                    <li class="active">lottery</li>
+                </ol>
+            </div>
+        </section>
+        <section class="section-bottom-30">
+            <div class="container">
+                <h4>Play Lottery</h4>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <dl class="terms-list wrap border-primary">
+                            <dd class="text-sm-left">
+                                <div class="lottery-container">
+                                    <div class="row">
+                                        <div class="center-ct">
+
+                                            <div class="drawing-ct col-lg-4 col-md-6 col-xs-12">
+                                                <div class="title">Drawings</div>
+
+                                                <div id="drawing-shortcuts" class="ct">
+                                                    <ul>
+                                                        <li><a class="button" id="selectAll" href="#">All</a></li>
+                                                        <li><a class="button" id="selectMorning" href="#">Morning</a></li>
+                                                        <li><a class="button" id="selectEvening" href="#">Evening</a></li>
+                                                        <li><a class="button" id="selectNone" href="#">None</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div id="drawing-list" class="ct">
+                                                    <p>Loading...</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="input-ct col-lg-3 col-md-6 col-xs-12">
+
+                                                <div id="input-numbers-ct" class="ct input-field">
+                                                    <div class="title">Numbers</div>
+                                                    <input type="text" id="numbers" name="numbers" /><br />
+                                                    <div class="quick-pick">
+                                                        <p>Quick Pick</p>
+                                                        <ol>
+                                                            <li><a href="#" id="quick-pick-clear">clear</a></li>
+                                                            <li><a href="#" id="quick-pick-2">2</a></li>
+                                                            <li><a href="#" id="quick-pick-3">3</a></li>
+                                                            <li><a href="#" id="quick-pick-4">4</a></li>
+                                                        </ol>
+                                                    </div>
+                                                    <div id="keypad">
+                                                        <ol>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_0">0</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_1">1</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_2">2</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_3">3</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_4">4</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_5">5</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_6">6</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_7">7</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_8">8</a></li>
+                                                            <li><a class="keypad-numbers" href="#" id="keypad_9">9</a></li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+
+                                                <div id="amount-straight-ct" class="ct input-field">
+                                                    <div class="title">Straight Amount</div>
+                                                    <input type="text" id="straightAmount" name="straightAmount" /><br />
+                                                    <div class="quick-pick">
+                                                        <p>Amount Shortcuts</p>
+                                                        <ol>
+                                                            @*<li><a href="#" data-value="">clear</a></li>
+                                                                <li><a href="#" data-value="0.01">0.01</a></li>
+                                                                <li><a href="#" data-value="0.05">0.05</a></li>
+                                                                <li><a href="#" data-value="0.10">0.10</a></li>
+                                                                <li><a href="#" data-value="0.25">0.25</a></li>
+                                                                <li><a href="#" data-value="0.50">0.50</a></li>
+                                                                <li><a href="#" data-value="1.00">1.00</a></li>
+                                                                <li><a href="#" data-value="5.00">5.00</a></li>*@
+                                                        </ol>
+                                                    </div>
+                                                </div>
+
+                                                <div id="amount-boxed-ct" class="ct input-field">
+                                                    <div class="title">Boxed Amount</div>
+                                                    <input type="text" id="boxedAmount" name="boxedAmount" /><br />
+                                                    <div class="quick-pick">
+                                                        <p>Amount Shortcuts</p>
+                                                        <ol>
+                                                            @*<li><a href="#" data-value="">clear</a></li>
+                                                                <li><a href="#" data-value="0.01">0.01</a></li>
+                                                                <li><a href="#" data-value="0.05">0.05</a></li>
+                                                                <li><a href="#" data-value="0.10">0.10</a></li>
+                                                                <li><a href="#" data-value="0.25">0.25</a></li>
+                                                                <li><a href="#" data-value="0.50">0.50</a></li>
+                                                                <li><a href="#" data-value="1.00">1.00</a></li>
+                                                                <li><a href="#" data-value="5.00">5.00</a></li>*@
+                                                        </ol>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ct action" id="addbet-ct">
+                                                    <button type="button" class="action button" id="addbet-action">Add Bet</button>
+                                                </div>
+                                                <div class="favorites-controls">
+                                                    <div class="title">Favorites</div>
+                                                    <div>
+                                                        <div>
+                                                            <select name="custFav" id="custFav" class="ct"></select>
+
+                                                        </div>
+                                                        <div>
+                                                            <button class="action button" id="addfavorite-action">Add to Order</button>
+                                                            <button class="action button" id="deletefavorite-action">Delete Favorite</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="bets-ct col-lg-5 col-md-12 col-xs-12">
+                                                <div class="ct" id="bets">
+                                                    <div id="undo" style="display:none;"></div>
+                                                    <div class="title">Bets</div>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th id="cancel-order-trash" class="text-center"><span class="glyphicon glyphicon-trash"></span></th>
+                                                                <th class="hidden-sm hidden-md hidden-lg">Bet Info</th>
+                                                                <th class="hidden-xs">Numbers</th>
+                                                                <th class="hidden-xs text-center">Type</th>
+                                                                <th class="hidden-xs">House</th>
+                                                                <th class="hidden-xs hidden-sm">
+                                                                    <span class="hidden-sm hidden-xs">Drawing Date</span>
+                                                                    <span class="hidden-md hidden-lg">Date</span>
+                                                                </th>
+                                                                <th class="text-right">Amount</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th colspan="99">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>
+                                                                            <th id="betcount" colspan="2">0 bets</th>
+                                                                            <th class="invalidBets hidden-xs" colspan="3"><a href="#">Click Here to Remove All Invalid Bets</a></th>
+                                                                            <th class="invalidBets hidden-sm hidden-md hidden-lg" colspan="2"><a href="#">Remove Invalid Bets</a></th>
+                                                                            <th id="bettotal" colspan="1">CaD 0</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                            </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                            @* This is the bet template that is copied *@
+                                                            <template id="bet-template">
+                                                                <tr>
+                                                                    <td class="remove-bet text-center"><a class="remove" href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                                                                    <td class="hidden-sm hidden-md hidden-lg">
+                                                                        <span class="numbers"></span> <span class="is-boxed"></span><br />
+                                                                        <span class="house"></span><br />
+                                                                        <span class="date"></span>
+                                                                    </td>
+                                                                    <td class="hidden-xs">
+                                                                        <span class="numbers"></span>
+                                                                        <span class="hidden-md hidden-lg">, for <span class="date"></span></span>
+                                                                    </td>
+                                                                    <td class="hidden-xs is-boxed text-center"></td>
+                                                                    <td class="hidden-xs house"></td>
+                                                                    <td class="hidden-xs hidden-sm date"></td>
+                                                                    <td class="amount text-right"></td>
+                                                                </tr>
+                                                                <tr class="errorDescription" data-id="">
+                                                                    <td colspan="99" class="message"></td>
+                                                                </tr>
+                                                            </template>
+                                                            @* End bet template *@
+                                                            <tr class="no-bets">
+                                                                <td colspan="99">
+                                                                    <p><strong>No bets have been placed yet!</strong></p>
+                                                                    <ol>
+                                                                        <li>Select houses to wager on.</li>
+                                                                        <li>Select desired numbers, or use the Quick Pick buttons to choose numbers.</li>
+                                                                        <li>Select either straight amount, boxed amount, or both.</li>
+                                                                        <li>Click "Add Bet" to add these bets to your wager list.</li>
+                                                                        <li>When happy with all of your wagers, click "Place Order"*.</li>
+                                                                        <li>*You must be logged in to place an order.</li>
+                                                                    </ol>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                                <div class="checkout-sign-inup-div">
+                                                    Please sign in to complete order...
+                                                </div>
+                                                <div class="ct" id="order-actions">
+                                                    <button type="button" id="cancel-order">Cancel Order</button>
+                                                    <button type="button" id="place-order">Place Order</button>
+                                                    @*<button type="button" id="transaction-history">Transaction History</button>*@
+                                                </div>
+                                                <div class="favorites-controls">
+                                                    <input type="text" id="favName" name="favName" />
+                                                    <button type="button" id="savefavorite-action">Save Order as Favorite</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ct lotto-ct">
+                                            <div id="placeOrder_Result">
+                                                <p class="message" id="placeOrder_ResultText"></p>
+                                                <div class="ct action">
+                                                    <button type="button" class="action button" onclick="$('#placeOrder_Result').hide();">Close</button>
+                                                </div>
+                                            </div>
+
+                                            <div id="transactionHistory">
+                                                <h2>Transaction History</h2>
+                                                <div id="transactionHistoryTable">
+                                                    Loading...
+                                                </div>
+                                                <div class="ct action">
+                                                    <button type="button" class="action button" onclick="$('#transactionHistory').hide();">Close</button>
+                                                </div>
+                                            </div>
+
+                                            <div id="orderDetails">
+                                                <h2>Order Details</h2>
+                                                <div id="orderDetailsTable">
+                                                    Loading...
+                                                </div>
+                                                <div class="ct action">
+                                                    <button type="button" class="action button" onclick="$('#orderDetails').hide();">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </dd>
+
+
+                        </dl><a href="~/games/winningnumbers" class="btn btn-primary btn-sm btn-no-arrow">winning numbers</a>
+                    </div>
+                </div>
+            </div>
+</div>
+
+	</section>
+</main>
+
+@section AdditionalFooterScripts
+{
+    <script type="text/javascript" src="~/Scripts/js/ResizeSensor.js"></script>
+    <link rel="stylesheet" href="~/Content/css/lotto.css">
+    <link rel="stylesheet" href="~/Content/css/grid.css">
+    <script src="~/Scripts/js/lottery-standard.js"></script>
+
+}

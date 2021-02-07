@@ -1,0 +1,446 @@
+﻿/*Lottery Games CSS*/
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+button, .button {
+	border: 0;
+	background-color: #e23d16;
+	padding: 0.5em;
+	color: #FFFFFF;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+}
+
+	button:hover, .button:hover {
+		background-color: #defffc;
+	}
+
+	button:hover, .button:hover, button:visited, .button:visited {
+		background-color: #e23d16;
+	}
+
+.hover-hand:hover {
+	cursor: pointer;
+}
+/* All containers */
+.ct {
+	width: 100%;
+	padding: 3px;
+}
+
+/* Main container */
+.lotto-ct {
+	background-color: rgba(0,0,0,0.2);
+	padding: 0;
+	position: relative;
+	margin-bottom: 2em;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE/Edge */
+	user-select: none; /* non-prefixed version, currently not supported by any browser */
+	position: relative;
+}
+
+/* Top header that contains next closing house and current time */
+#lotto-header {
+	background-color: #006361;
+	color: #fff;
+	padding: 3px;
+	position: relative;
+}
+
+#next-closing-house {
+}
+
+#timestamp {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+/* Main area that contains 3 logical columns */
+.center-ct {
+}
+
+/* First logical column that has list of houses */
+.drawing-ct {
+}
+
+/* Buttons to select none/all/morning/evening */
+#drawing-shortcuts {
+	margin: 0;
+	padding: 0;
+}
+
+	#drawing-shortcuts ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		#drawing-shortcuts ul li {
+			display: inline;
+		}
+
+			#drawing-shortcuts ul li a {
+				background-color: #e23d16;
+				color: #fff;
+				width: 48%;
+				display: inline-block;
+				text-align: center;
+				margin-bottom: 3px;
+				line-height: 2em;
+				padding: 0;
+			}
+
+/* list of houses */
+#drawing-list {
+	max-height: none !important;
+	padding: 0 5px 0 0;
+	margin: 0;
+    height: 750px;
+}
+
+	#drawing-list p {
+	}
+
+	#drawing-list ul {
+		list-style-type: none;
+	}
+
+	#drawing-list div {
+		/*display: block;*/
+	}
+
+		#drawing-list div label {
+			background-color: #000;
+			color: #fff;
+			display: block;
+			margin-top: 3px;
+			line-height: 2em;
+			text-align: center;
+			font-family: "Montserrat", sans-serif;
+			font-weight: normal;
+			font-weight: light;
+		}
+
+			#drawing-list div label.selected {
+				background-color: #e23d16;
+				color: #000;
+			}
+
+			#drawing-list div label input {
+				display: none;
+			}
+
+		#drawing-list div.disabled {
+			opacity: 0.3;
+            display: block;
+		}
+
+/* Paging */
+
+div.page {
+	display: none;
+}
+
+	div.page.active {
+		display: block;
+	}
+
+
+/* Second logical column */
+.input-ct {
+}
+
+.input-field {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+	.input-field input {
+		font-size: 2em;
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+		background-color: #fff;
+		color: #000;
+		border: 0;
+	}
+
+	.input-field .quick-pick p {
+	}
+
+	.input-field .quick-pick ol {
+		list-style-type: none;
+		margin: 0;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+		.input-field .quick-pick ol li {
+			display: inline;
+		}
+
+			.input-field .quick-pick ol li a {
+				display: inline-block;
+				background-color: #000;
+				color: #fff;
+				width: 23%;
+				line-height: 2em;
+				margin-top: 3px;
+				margin-right: 2px;
+				border: 0;
+			}
+
+.add-to-order {
+	background-color: #b73f3b;
+}
+
+.void-order {
+	background-color: #b77e3b;
+}
+
+#amount-boxed-ct p, #amount-straight-ct p {
+	display: none;
+}
+
+#input-numbers-ct {
+}
+
+	#input-numbers-ct #numbers {
+		font-size: 3.2em;
+	}
+
+.ct.action {
+	text-align: center;
+}
+
+	.ct.action button {
+		width: 100%;
+	}
+
+#addbet-ct {
+}
+
+.bets-ct {
+}
+
+#bets {
+}
+
+	#bets > table {
+		margin: 5px;
+		width: 100%;
+	}
+
+		#bets > table > thead #cancel-order:hover {
+			color: #f00;
+			cursor: pointer;
+		}
+
+		#bets > table tr, #bets > table td {
+			padding: 3px;
+		}
+
+		#bets > table tr {
+		}
+
+		#bets > table > tbody tr.error td {
+			background-color: #f00;
+			color: #fff;
+		}
+
+		#bets > table > tbody tr.error:hover a.remove {
+			color: #fff;
+		}
+
+		#bets > table > tbody tr.errorDescription {
+			background-color: #600;
+			color: #ccc;
+			text-align: center;
+			box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.25);
+		}
+
+		#bets > table > tbody tr:hover td {
+			color: #fff;
+		}
+
+			#bets > table > tbody tr:hover td a.remove {
+				color: #f00;
+			}
+
+		#bets > table > thead th, #bets > table > tfoot > tr > th {
+			background-color: #f1bd3b;
+			color: #000;
+			padding: 3px;
+			vertical-align: bottom;
+			text-align: left;
+			font-weight: normal;
+			font-family: "Montserrat", sans-serif;
+			border-bottom: 2px solid #bc922f;
+		}
+
+		#bets > table > tfoot .invalidBets a {
+			display: none; /* initial value */
+			background-color: yellow;
+			color: #000;
+			padding: 1px 5px;
+		}
+
+		#bets > table > thead th.text-center {
+			text-align: center;
+		}
+
+		#bets > table > thead th.text-right {
+			text-align: right;
+		}
+
+		#bets > table > tbody > td {
+		}
+
+		#bets > table > tfoot > th {
+			border-top: 2px solid #bc922f;
+			color: #000;
+		}
+
+		#bets > table #betcount {
+			text-align: left;
+		}
+
+		#bets > table #bettotal {
+			text-align: right;
+			font-weight: bold;
+		}
+
+	#bets tr.no-bets td {
+		color: #fff;
+		padding: 1em 0;
+		font-weight: normal;
+	}
+
+	#bets tr.no-bets strong {
+		font-family: "Montserrat", sans-serif;
+		font-size: 1.3em;
+	}
+
+	#bets tr.no-bets ol {
+		list-style-type: decimal;
+		margin-left: 2em;
+	}
+
+	#bets > table > tfoot > tr > th > table {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+		#bets > table > tfoot > tr > th > table th {
+			border: 0;
+		}
+
+#order-actions {
+	text-align: center;
+}
+
+	#order-actions button {
+		width: 200px;
+		margin-top: 0.5em;
+	}
+
+	#order-actions #cancel-order {
+		border: none;
+		background-color: rgba(0,0,0,0.25);
+		color: #000;
+		order: 2;
+	}
+
+	#order-actions #place-order {
+		font-size: 2.6em;
+		order: 1;
+		width: 350px;
+	}
+
+		#order-actions #place-order:disabled {
+			opacity: 0.25;
+			color: #000;
+		}
+
+	#order-actions #transaction-history {
+		margin-top: 20px;
+		order: 3;
+		border: none;
+	}
+
+.bets-ct #undo {
+	background-color: #f00;
+	color: #fff;
+	padding: 5px;
+	width: 30em;
+	margin: 0 auto;
+	text-align: center;
+	right: 3px;
+	top: 33px;
+	text-shadow: 0 1px 0 #000;
+}
+
+	.bets-ct #undo a {
+		color: #fff;
+	}
+
+#keypad {
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 20px;
+}
+
+	#keypad ol {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	#keypad li {
+		display: inline-block;
+		width: 18%;
+		background-color: #000;
+		margin-bottom: 5px;
+	}
+
+.keypad-numbers {
+	font-size: 50px;
+	line-height: 65px;
+	color: white;
+	height: 60px;
+}
+
+	.keypad-numbers:hover {
+		color: #fff;
+		cursor: pointer;
+	}
+
+
+.input-ct .favorites-controls {
+	margin-top: 1em;
+}
+
+
+	.input-ct .favorites-controls div {
+		text-align: center;
+	}
+
+.bets-ct .favorites-controls {
+	text-align: center;
+	margin-top: 25px;
+}
+
+	.bets-ct .favorites-controls button {
+		display: block;
+		margin: 5px auto 0 auto;
+	}

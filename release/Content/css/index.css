@@ -1,0 +1,391 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.index {background: #262626;}
+.index_icons {background: url("../images/index_icons.png") no-repeat;}
+.index .banner {position: relative; width: 100%; height: 600px; overflow: hidden;z-index:1}
+.index .banner .banner-cycle {width: 100%; height: 100%;}
+.index .banner .banner-img,.index .banner .banner-img a {width: 100%; height: 100%; display: block;}
+.index .banner1 {background: url("../images/banner1.jpg") no-repeat center top #262626;}
+.index .banner2 {background: url("../images/banner2.jpg") no-repeat center top #262626;}
+.banner .banner-info {width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.banner .banner-info .content {height: 100%; position: relative;}
+.banner .banner-txt {background: url("../images/banner_info.png") no-repeat; width: 317px; height: 225px; position: absolute; top: 77px; right: 0; z-index: 100;display:none;}
+.banner .info1 {height: 100px; padding-top: 20px; text-align: center;}
+.banner .info1 h1 {font-size: 54px; color: #fff;}
+.banner .info1 h1 span {font-weight: normal;}
+.banner .info1 h1 .value {font-size: 54px; font-weight: bold;}
+.banner .info1 p {font-size: 18px; color: #fff;}
+.banner .info2 {padding: 26px 0 0;}
+.banner .info2 .col {width: 155px; text-align: center; float: left; position: relative;}
+.banner .info2 .vr {width: 1px; height: 25px; background: #383839; display: block; position: absolute; top: 4px; right: 0;}
+.banner .info2 h4 {font-size: 18px; color: #fff; margin-bottom: 5px; font-weight: normal;}
+.banner .info2 h4 span {font-size: 14px;}
+.banner .info2 h4 #val2 {font-size: 18px;}
+.banner .info2 p {font-size: 14px; color: #8ca3ba;}
+.banner .info2 i {display: inline-block; vertical-align: top; position: relative; top: 5px; width: 15px; height: 15px; left: auto;}
+.banner .info2 i.icon1 {background-position: -74px -159px;}
+.banner .info2 i.icon2 {background-position: -91px -159px;}
+.banner .pager {position: absolute; right: 0; bottom: 52px; z-index: 200; height: 10px;}
+.banner .pager span {width: 40px; height: 5px; background: #b8babb; margin-left: 15px; display: block; float: left; position: relative; cursor: pointer;margin-top: 20px;}
+.banner .pager span i {width: 100%; height: 100%; display: none; position: absolute; top: 0; left: 0; background: #c60909;}
+.banner .pager span.cycle-pager-active i {display: block; animation: progress 4s linear; -webkit-animation: progress 4s linear; -moz-animation: progress 4s linear;}
+
+@keyframes progress {
+    0% {width: 0;}
+    100% {width: 32px;}
+}
+
+@-webkit-keyframes progress {
+    0% {width: 0;}
+    100% {width: 32px;}
+}
+
+
+.index .main { background: url("../images/main_bg.jpg") no-repeat center top #262626; padding: 60px 0 40px;}
+.index .main .content {position: relative;}
+.index .light-holder {position: absolute; top: -32px; left: -12px; width: 1212px;}
+.index .light {display: block; z-index: 100; width: 392px; height: 5px; background: url("../images/light.png") no-repeat; position: absolute; top: -27px; left: -12px; margin-left: 12px;}
+.index .light.open {display: block;height: 226px;}
+.index .switch {display: block; position: absolute; right: -58px; top: 0; width: 13px; height: 60px; background: url("../images/icon-switch.png") no-repeat center bottom;}
+.index .switch span {width: 1px; height: 46px; display: block; background: #494949; position: absolute; top: 0; left: 6px;}
+.index .switch.active {animation: switch 1s ease-in-out; -webkit-animation: switch 1s ease-in-out;}
+.index .switch.active span {animation: switch2 1s ease-in-out; -webkit-animation: switch2 1s ease-in-out;}
+.index .row {margin: 0 0 25px -12px;}
+.index .row .game {position: relative; float: left; z-index: 100;}
+.index .row .game:hover .light{height:226px;}
+
+.index .game-img {width: 100%; display: block;position:relative;}
+
+.index .game-img1 {
+    background: url("../images/slotgames/SugarPop.jpg") no-repeat;
+    background-size: contain;
+}
+.index .game-img2 {
+    background: url("../images/slotgames/SlotfatherJP.jpg") no-repeat;
+    background-size: contain;
+}
+.index .game-img3 {
+    background: url("../images/slotgames/RookRevenge.jpg") no-repeat;
+    background-size: contain;
+}
+.index .game-img4 {
+    background: url("../images/slotgames/TheAngler.jpg") no-repeat;
+    background-size: contain;
+}
+.index .game-img5 {
+    background: url("../images/slotgames/TigerClaw.jpg") no-repeat;
+    background-size: contain;
+}
+.index .game-txt {position: absolute; top: 125px; left: 24px; display: block;}
+.index .game-txt ul {padding-left: 12px;}
+.index .game-txt ul li {font-size: 13px; color: #646464; line-height: 22px; font-style: italic;list-style:disc;}
+.index .txtbtn{color:#c09452;font-size: 15px;font-style: italic;float:left;margin-top:30px;cursor: pointer;}
+
+.index .game-txt ul.w200{width:200px;}
+.index .txtbtn.mtop5{float:none;margin:0;position:absolute;bottom: 45px;left: 17px;}
+.index .thumbup{width:23px;height:23px;display:block;background: url("../images/thumbup.png") no-repeat;position:absolute;top: 121px;
+    right: 170px;}
+
+.index .gameh {width: 390px; height: 258px; display: none; position: absolute; top: 0; left: 0; border: 1px solid #6e5725;}
+
+
+
+.txtbtn.hvr-wobble-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+.txtbtn.hvr-wobble-horizontal:hover {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.index .game:hover .gameh {display: block;}
+.index .game:hover .light {display: block;}
+.index .gameh .btn {background: url("../images/trans2.png") repeat; position: relative; z-index: 100; display: block; width: 148px; height: 36px; border: 1px solid #cca352; text-align: center; line-height: 36px; font-size: 16px; color: #cfcfcf; margin: 120px 0 0 20px;}
+.index .gameh .btn:hover {background: #cca352; color: #fff;}
+.index .gameh .btn2 {margin-top: 8px;}
+.index .gameh .link {display: block; width: 150px; height: 38px; line-height: 38px; font-size: 18px; color: #b4813b; margin: 10px 0 0 20px; text-align: center;}
+.index .game-holder {width: 392px; height: 260px; position: relative; margin-left: 12px; float: left;}
+.index .game-holder .game-ss {overflow: hidden; width: 392px; height: 305px; position: relative; z-index: 100;}
+.index .game-holder .game {margin-left: 0;}
+.index .game-holder:hover .light {display: block;height:226px;}
+.index .game-pager {display: block; position: absolute; bottom: 5px; left: 26px; z-index: 100;}
+.index .game-pager span {color: #858585; font-size: 30px; margin-right: 5px; cursor: pointer;}
+.index .game-pager span.cycle-pager-active, .index .game-pager span:hover {color: #c9a86e;}
+.index .row2 {margin-left: 0;}
+.index .row .col {float: left; width: 655px; height: 104px; background: url("../images/img6.jpg") no-repeat; padding: 34px 70px 38px; position: relative;}
+.index .team {width: 150px; float: left; margin: 0 33px; font-size: 15px; color: #fff; text-align: center;}
+.index .team .flag {width: 40px; height: 40px; margin: 0 auto 2px; display: block;}
+.index .team .flag1 {background: url("../images/team1.png") no-repeat center center;}
+.index .team .flag2 {background: url("../images/team2.png") no-repeat center center;}
+.index .team .score {width: 148px; height: 28px; border: 1px solid #aaa; border-radius: 1px; -webkit-border-radius: 1px; margin-top: 15px;}
+.index .team .score .arrow {width: 67px; height: 28px; float: left; text-align: center; line-height: 28px; font-size: 15px; color: #fff; display: block;}
+.index .team .score .arrow.red {background: url("../images/icon1.png") no-repeat;}
+.index .team .score .arrow.green {background: url("../images/icon2.png") no-repeat;}
+.index .team .score .val{font-size: 15px; color: #fff; line-height: 28px; width: 80px; text-align: center; float: left; display: block;}
+.index .team .time {font-size: 21px; color: #fff; text-align: center; margin: 19px 0 0;}
+.index .team .time2 {font-size: 21px; color: #d9d9d9; height: 40px;}
+.index .team .val2 {color: #272626; width: 60px; height: 28px; line-height: 28px; background: #e3dab5; display: block; float: left;}
+.index .trans {cursor:pointer;display: none; background: url("../images/trans1.png") repeat; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.index .trans .btn {display: block; background: url("../images/trans2.png") repeat; width: 148px; height: 36px; border: 1px solid #cca352; text-align: center; line-height: 36px; font-size: 18px; color: #cfcfcf; margin: 70px auto 0;}
+.index .trans .btn:hover {background: #cca352; color: #fff;}
+.index .col:hover .trans {display: block;}
+.index .sports {width: 391px; height: 176px; float: left; margin-left: 12px; position: relative;}
+.index .sport-img {display: block; width: 100%; height: 100%;}
+.index .sport1 {background: url("../images/img7b.jpg") no-repeat;}
+.index .sport2 {background: url("../images/img8b.jpg") no-repeat;}
+.index .sports:hover .trans {display: block;}
+.index .team2 {color: #cacaca;}
+.index .team2 .score .arrow.gray {background: url("../images/icon3.png") no-repeat; color: #c4c4c4;}
+.index .team2 .score .val {color: #adadad;}
+.index .team2 .score .val2 {background: #444; color: #c4c4c4;}
+.index .team1 {width: 216px; margin: 0;}
+.index .team1 .time2 {font-size: 12px; margin-top: 0; line-height: 20px;}
+.index .team1 .teamname {font-size: 14px;}
+.index .team1 .score {margin: 15px auto 0;    margin-top: 35px}
+
+.index .col1 {float: left; width: 796px;}
+.index .col1 .t, .index .col2 .t{font-size: 18px; color: #e5e5e5; margin-bottom: 15px; text-transform: uppercase;}
+.index .col1 .c {width: 796px; height: 180px; position: relative; overflow: hidden;}
+.index .col1 .slots-cycle {width: 100%; height: 180px;}
+.index .col1 .slides {width: 258px; height: 180px; background: #212121; margin-right: 11px;}
+.index .slides .slot {width: 100%; height: 100%; position: relative;}
+.index .slides .game-title {height: 50px; padding: 5px 0 0; text-align: center; font-size: 16px; color: #cfcfcf;}
+.index .slides .game-title .icon-flame {width: 16px; height: 18px; display: inline-block; background-position: -37px -2px; position: relative; top: 2px;}
+.index .slot .new {display: block; width: 36px; height: 32px; background-position: -1px -2px; position: absolute; top: 0; left: 0;}
+.index .slot .rating {margin-top: 2px; text-align: center; height: 15px;}
+.index .rating span {display: inline-block; width: 15px; height: 15px;}
+.index .rating span.star-a {background-position: -54px -2px;}
+.index .rating span.star {background-position: -71px -2px;}
+.index .slot .trans .btn {margin-top: 38px; height: 45px;}
+.index .slot:hover .trans {display: block;}
+.index .col1 #play-prev {background: url("../images/prev.png") no-repeat; width: 90px; height: 180px; display: block; cursor: pointer; z-index: 100; position: absolute; top: 0; left: 0;}
+.index .col1 #play-next {background: url("../images/next.png") no-repeat; width: 90px; height: 180px; display: block; cursor: pointer; z-index: 100; position: absolute; top: 0; right: 0;}
+.index .col2 {float: left;}
+.index .col2 .sports {margin-left: 0;}
+.index .poker {width: 100%; height: 180px; position: relative;}
+.index .poker-img {background: url("../images/img9.jpg") no-repeat; width: 100%; height: 100%; display: block;}
+.index .poker:hover .trans {display: block;}
+.index .event-cycle {width: 100% !important; height: 180px;}
+.index .event {width: 258px; height: 180px; margin-right: 11px;}     
+     
+
+/*.index .event a {display: block; width: 100%; height: 100%; position: relative;}*/    /*Commented on 23-jan-2019 due to conflict*/
+.index .event a { width: 100%; height: 100%; position: relative;}        /*Added/Modified on 23-jan-2019 due to conflict*/
+
+
+    .index .event a.event-img1 {
+        background: url("../images/slotgames/MagicShoppe.jpg") no-repeat;
+        background-size: contain;
+    }
+    .index .event a.event-img2 {
+        background: url("../images/slotgames/Greet88.jpg") no-repeat;
+        background-size: contain;
+    }
+    .index .event a.event-img3 {
+        background: url("../images/slotgames/Gladiator.jpg") no-repeat;
+        background-size: contain;
+    }
+    .index .event a.event-img4 {
+        background: url("../images/slotgames/FruitZen.jpg") no-repeat;
+        background-size: contain;
+    }
+    .index .event a.event-img5 {
+        background: url("../images/slotgames/FaFaTwins.jpg") no-repeat;
+        background-size: contain;
+    }
+    .index .event a.event-img7 {
+        background: url("../images/slotgames/CuriousMachine.jpg") no-repeat;
+        background-size: contain;
+    }
+.index .event .event-t {width: 100%; height: 36px; background: url("../images/trans3.png") repeat; position: absolute; bottom: 0; left: 0; text-align: center; line-height: 36px; font-size: 16px; color: #fff;}
+.index .col1 .c {position: relative;}
+.index .col1 #play-prev2 {background: url("../images/prev2.png") no-repeat; width: 25px; height: 51px; position: absolute; top: 70px; left: 0; z-index: 100; cursor: pointer;}
+.index .col1 #play-next2 {background: url("../images/next2.png") no-repeat; width: 25px; height: 51px; position: absolute; top: 70px; right: 0; z-index: 100; cursor: pointer;}
+.index .col2 .promo { position: relative; background:#000 url("../images/img10.jpg") no-repeat; text-align: center;}
+.index .promo h3 {font-size: 20px; font-weight: normal; padding-top: 24px; margin-bottom: 8px; color: #cca667;}
+.index .promo h5 {font-size: 16px; font-weight: normal; color: #858585;}
+.index .promo .contact-num {padding: 12px 0 0 14px; text-align: left; border-top: 1px solid #282828; width: 326px; margin: 12px auto 0;}
+.index .contact-num .col {float: left; font-size: 14px; color: #d8d8d8; line-height: 22px; background: none; padding: 0; width: auto; height: auto; margin-bottom: 12px;}
+.index .contact-num .col i { float: left; display: block; margin-right: 6px; width: 23px; height: 23px;}
+.index .contact-num .icon-num1 {width: 22px; height: 22px; background-position: -88px 0;}
+.index .contact-num .icon-num2 {background-position: -112px 0;}
+.index .contact-num .icon-skype {background: url("../images/icon-skype.png") no-repeat;}
+.index .contact-num .icon-fb {background: url("../images/icon-facebook.png") no-repeat;}
+.index .contact-num .col .icon-mail {background: url("../images/icon-mail.png") no-repeat; width: 25px; height: 21px;}
+.index .contact-num .col1 {width: 142px;}
+
+@keyframes switch {
+    0% {height: 60px;}
+    50% {height: 32px;}
+    100% {height: 60px;}
+}
+
+@-webkit-keyframes switch {
+    0% {height: 60px;}
+    50% {height: 32px;}
+    100% {height: 60px;}
+}
+
+@keyframes switch2 {
+    0% {height: 46px;}
+    50% {height: 19px;}
+    100% {height: 46px;}
+}
+
+@-webkit-keyframes switch2 {
+    0% {height: 46px;}
+    50% {height: 19px;}
+    100% {height: 46px;}
+}
+
+.maintenance{
+    width:100%;
+    height:100%;
+    background: url("../images/trans-d.png") repeat;
+    position:absolute;
+    top:0;
+    z-index:200;
+}
+.maintenance .icon{
+    width:30px;
+    height:31px;
+    display: block;
+    background: url("../images/maintenance.png") no-repeat;
+    position:absolute;
+    left:0;
+    right:0;
+    top: 35%;
+    margin:0 auto;
+}
+
+.maintenance p{
+    position:absolute;
+    bottom:35%;
+    width:100%;
+    text-align: center;
+}
+
+.copyright .brand-name{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 700;
+    font-size:24px;
+}
+
+.brand-name span:nth-child(2) {
+    color: #e23d16;
+    font-weight: 400;
+}
+
+#accountpannel {
+    width: 300px;
+}
+
+
+
+.aboutus_page .section .sec-title {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background: -webkit-linear-gradient(#efc877, #9b764a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.aboutus_page .details {
+    width: 720px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+    .aboutus_page .details .lady-bg {
+        width: 350px;
+        height: 380px;
+        float: left;
+        background: url("../images/contact.png") no-repeat center bottom;
+        background-size:contain;
+        margin-top:-45px;
+    margin-right: 40px;
+    }
+
+    .aboutus_page .details .info {
+        padding: 30px 0 0 20px;
+        float: left;
+        margin-top:55px;
+    }
+
+    .aboutus_page .details .row {
+        height: 40px;
+        margin-bottom: 45px;
+    }
+
+        .aboutus_page .details .row .icon {
+            display: block;
+            float: left;
+        }
+
+    .aboutus_page .details .desc {
+        float: right;
+        width: 220px;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .aboutus_page .details .row a {
+        color: #fff;
+        float: left;
+        display: block;
+        line-height: 40px;
+        text-decoration: underline;
+        font-size: 16px;
+    }
+
+    .aboutus_page .details .row p {
+        color: #fff;
+        float: left;
+        display: block;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+
+    /*captcha*/
+.capt{
+    background-color:grey;
+    width: 100%;    
+    border: 1px solid grey;
+    
+}
+
+#mainCaptcha{
+    position: relative;
+   
+    
+}
+#txtInput{
+    position: relative;
+    width:100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+}

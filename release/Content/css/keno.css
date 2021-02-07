@@ -1,0 +1,385 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.bold {
+    font-weight: bold;
+}
+
+.play-game-header {
+    padding-top: 10px;
+}
+
+.play-game-container
+{
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+}
+
+.mtable {
+    width: 222px;
+    float: left;
+    background: #F0F0F0;
+    padding: 5px;
+    border: 8px #F0F0F0 solid;
+    /*border-radius: 12px;*/
+}
+
+    .mtable:hover {
+        border: 8px #e23d16 solid;
+        padding: 5px;
+    }
+
+	.mtable .btn:after
+	{
+		content: '';
+		margin: 0;
+		width: auto;
+	}
+	
+.problem {
+    border: 8px #b21414 solid;
+    padding: 5px;
+}
+
+.mtable li {
+    width: 13.27%;
+    height: 28px;
+    margin: 0 1% 1% 0;
+    border: 1px solid #efefef;
+    float: left;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+	padding-top: 3px;
+    cursor: pointer;
+    color: #333;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+    .mtable li.active {
+        background: #e23d16 !important;
+        color: #fff;
+    }
+
+.luckyHolder li {
+    background: url('../images/s1.png') no-repeat;
+    background-size: 28px;
+    margin: 0px;
+    width: 14% !important;
+    padding-top: 2px;
+}
+
+.mtable li:hover {
+    background-color: #5bc0de;
+    border: 1px solid #46b8da;
+    color: #fff;
+}
+
+.luckyHolder li:hover {
+    background-color: transparent !important;
+    border: none;
+    background: url('../images/s2.png') no-repeat;
+    background-size: 28px;
+    margin: 0px;
+    width: 14% !important;
+}
+
+.luckyHolder li.active {
+    background-color: transparent !important;
+    border: none;
+    background: url('../images/s3.png') no-repeat !important;
+    background-size: 28px !important;
+    margin: 0px;
+    width: 14% !important;
+    color: #fff;
+}
+
+.select_descr {
+    color: #286090;
+    text-align: center;
+    padding: 0px 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.select_descr_l {
+    color: #286090;
+    text-align: center;
+    padding: 0px 4px;
+    margin: 4px;
+    font-weight: bold;
+    clear: both;
+}
+
+.mtable_holder {
+    width: 228px;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-bottom: 5px;
+}
+
+.quickPick {
+    margin-top: 10px;
+}
+
+.moveMtable {
+    margin-top: 190px;
+}
+
+.hiddenx {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mtable_holder {
+        width: 228px;
+        overflow: hidden;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mtable_holder {
+        width: 228px;
+        overflow: hidden;
+    }
+
+    .quickPick {
+        margin-top: 0px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mtable_holder {
+        width: 100%;
+    }
+}
+
+.row_itm {
+    border: 5px solid #5bc0de;
+    height: 100px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 4px;
+    background: none;
+    cursor: pointer;
+}
+
+    .row_itm:hover {
+        border: 5px solid #2E7D32;
+        height: 100px;
+    }
+
+    .row_itm.active {
+        border: 5px solid #2E7D32;
+        background: url(../images/check-circle.png) no-repeat center;
+    }
+
+    .row_itm h3 {
+        margin: 8px;
+    }
+
+#priceHolder h3 {
+    margin-bottom: 0px;
+}
+
+/* Results */
+.results {
+}
+
+    .results th {
+        background-color: #F0F0F0;
+    }
+
+    .results td {
+        font-size: 19px;
+    }
+
+.rtable {
+    width: 240px;
+    float: left;
+    font-size: 19px;
+}
+
+    .rtable ul {
+        padding: 0;
+        background: #F0F0F0;
+        height: 40px;
+        width: 210px;
+        border-radius: 10px;
+    }
+
+    .rtable li {
+        width: 30px;
+        margin: 0 1% 0 0;
+        border: 1px solid #46b8da;
+        float: left;
+        display: block;
+        text-align: center;
+        border-radius: 20px;
+        box-sizing: border-box;
+        background-color: #5bc0de;
+        color: #fff;
+    }
+
+        .rtable li.luckyNum {
+            background-color: transparent !important;
+            border: none;
+            background: url('../images/s3.png') no-repeat !important;
+            background-size: 30px !important;
+            margin: 0;
+            color: #fff;
+            height: 30px;
+            width: 30px !important;
+        }
+
+.game-results-row-rtable {
+    font-size: 19px;
+    background: #F0F0F0;
+    width: 210px;
+    border-radius: 10px;
+}
+
+    .game-results-row-rtable ul {
+        padding: 0;
+        height: 40px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .game-results-row-rtable li {
+        width: 30px;
+        margin: 2% 1% 1% 1%;
+        border: 1px solid #46b8da;
+        float: left;
+        display: block;
+        text-align: center;
+        border-radius: 20px;
+        box-sizing: border-box;
+        background-color: #5bc0de;
+        color: #fff;
+    }
+
+        .game-results-row-rtable li.luckyNum {
+            background-color: transparent !important;
+            border: none;
+            background: url('../images/s3.png') no-repeat !important;
+            background-size: 29px !important;
+            margin: 2% 1% 1% 1%;
+            color: #fff;
+            width: 30px !important;
+        }
+
+/*Game Info*/
+.info {
+    width: 900px;
+}
+
+    .info th {
+        background-color: #F0F0F0;
+    }
+
+    .info td {
+        font-size: 19px;
+    }
+
+.info-breakdown {
+    width: 100%;
+}
+
+    .info-breakdown th {
+        background-color: #F0F0F0;
+    }
+
+.info-detail-image {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 200px;
+    margin: 20px 0;
+}
+
+/*Games List*/
+.games-container {
+    text-align: center;
+}
+
+.gameItemHolder {
+    margin: 5px 0;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+}
+
+.gameItem {
+    margin: 5px 5px;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 270px;
+    height: 270px;
+    background-color: #F0F0F0;
+}
+
+.imgHolder {
+    margin: 10px auto;
+    height: 100px;
+}
+
+.play-game-img {
+    /*background-color: #909090;
+    border-radius: 10px;*/
+    max-width: 230px;
+    max-height: 95px;
+    width: auto;
+    height: auto;
+}
+
+.play-game-jackpot {
+    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+.gameBuyButton {
+    padding: 5px;
+}
+
+.gameImgbak {
+    background-color: #909090;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    max-height: 100px;
+    max-width: 200px;
+}
+
+.extra-number {
+    font-weight: bold;
+    text-align: center;
+}
+
+.extra-number-special {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.panel h3{
+	color:#000000;
+}
+.panel h4{
+	color:#000000;
+}
+.panel h5{
+	color:#000000;
+}

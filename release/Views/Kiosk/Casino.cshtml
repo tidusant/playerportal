@@ -1,0 +1,939 @@
+﻿@{
+    ViewBag.Title = "Casino";
+}
+
+<!-- Page Content-->
+<main class="page-content">
+    @Html.Hidden("Login", @Url.Action("login", "Account"))
+    @Html.Hidden("lobby", @Url.Action("lobby", "home"))
+    @Html.Hidden("APIURL", @System.Configuration.ConfigurationManager.AppSettings["APIUrl"])
+
+    <!--Section Top News-->
+
+    <br>
+    <!--Section Main Content-->
+    <section class="section-bottom-50">
+        <div class="container">
+            <div class="row">
+                <!--Section Main-->
+                <div class="col-xs-12 col-lg-8">
+                    <!--Section Featured News-->
+                    <section class="section-bottom-50">
+                        <h4 class="block-inline">casino</h4>
+                        <div class="btn-group-isotope clearfix">
+                            <button data-isotope-filter="page1" data-isotope-group="gallery" class="active">PAGE 1</button>
+                            <button data-isotope-filter="page2" data-isotope-group="gallery"> PAGE 2</button>
+                            <button data-isotope-filter="page3" data-isotope-group="gallery"> PAGE 3</button>
+                            <button data-isotope-filter="page4" data-isotope-group="gallery"> PAGE 4</button>
+                            <!--<button data-isotope-filter="page5" data-isotope-group="gallery">PAGE 5</button>
+                            <button data-isotope-filter="page6" data-isotope-group="gallery"> PAGE 6</button>
+                            <button data-isotope-filter="page7" data-isotope-group="gallery"> PAGE 7</button>
+                            <button data-isotope-filter="page8" data-isotope-group="gallery"> PAGE 8</button>-->
+
+
+                        </div>
+                        <!--Casino Page 1-->
+                        <div data-isotope-layout="fitRows" data-isotope-group="gallery" class="row row-no-gutter isotope border-green">
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/8a.jpg")" alt="" /><a href="#" onclick="play(false,'greedyservants',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'greedyservants',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Greedy Servants</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'greedyservants',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'greedyservants',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/7a.jpg")" alt="" /><a href="#" onclick="play(false,'precioustreasures',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'precioustreasures',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Precious Treasures</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'precioustreasures',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'precioustreasures',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/60a.jpg")" alt="" /><a href="#" onclick="play(false,'8luckycharms',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'8luckycharms',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>8 Lucky Charms</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'8luckycharms',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'8luckycharms',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/61a.jpg")" alt="" /><a href="#" onclick="play(false,'fortunekeepers',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'fortunekeepers',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Fortune Keepers</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'fortunekeepers',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'fortunekeepers',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-9fc.jpg")" alt="" /><a href="#" onclick="play(false,'9figuresclub',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'9figuresclub',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>9 Figures Club</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'9figuresclub',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'9figuresclub',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/21a.jpg")" alt="" /><a href="#" onclick="play(false,'terracotawilds',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'terracotawilds',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Terracotta Wilds</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'terracotawilds',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'terracotawilds',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/index-30a.jpg")" alt="" /><a href="#" onclick="play(false,'explodingpirates',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'explodingpirates',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Exploding Pirates</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'explodingpirates',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'explodingpirates',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page1" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-cj.jpg")" alt="" /><a href="#" onclick="play(false,'codenamejackpot',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'codenamejackpot',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Codename Jackpot</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'codenamejackpot',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'codenamejackpot',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Casino Page 2-->
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-ea.jpg")" alt="" class="img-width-auto" /><a href="#" onclick="play(false,'egyptianadventure',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'egyptianadventure',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Egyptian Adventure</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'egyptianadventure',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'egyptianadventure',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/41a.jpg")" alt="" class="img-width-auto" /><a href="#" onclick="play(false,'irishcharms',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'irishcharms',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Irish Charms</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'irishcharms',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'irishcharms',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-af.jpg")" alt="" /><a href="#" onclick="play(false,'amigosfiesta',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'amigosfiesta',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Amigos Fiesta</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'amigosfiesta',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'amigosfiesta',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-fof.jpg")" alt="" class="img-width-auto" /><a href="#" onclick="play(false,'farmoffun',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'farmoffun',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Farm of Fun</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'farmoffun',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'farmoffun',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-fs.jpg")" alt="" class="img-width-auto" /><a href="#" onclick="play(false,'forbiddenslot',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'forbiddenslot',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Forbidden Slot</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'forbiddenslot',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'forbiddenslot',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-rw.jpg")" alt="" /><a href="#" onclick="play(false,'royalwin',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'royalwin',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Royal Win</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'royalwin',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'royalwin',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-sp.jpg")" alt="" /><a href="#" onclick="play(false,'secretpotion',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'secretpotion',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Secret Potion</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'secretpotion',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'secretpotion',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page2" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-wws.jpg")" alt="" /><a href="#" onclick="play(false,'wildwildspin',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'wildwildspin',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Wild Wild Spin</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'wildwildspin',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'wildwildspin',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PAGE 3 -->
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-at.jpg")" alt="" /><a href="#" onclick="play(false,'atlantictreasures',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false, 'atlantictreasures', true, false);" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Atlantis Treasure</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true, 'atlantictreasures', true, false);">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false, 'atlantictreasures', true, false);" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/index-22a.jpg")" alt="" /><a href="#" onclick="play(false,'surprising7',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'surprising7',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Surprising 7's</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'surprising7',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'surprising7',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-cgw.jpg")" alt="" /><a href="#" onclick="play(false,'catsgonewild',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'catsgonewild',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Cats Gone Wild</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'catsgonewild',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'catsgonewild',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-cst.jpg")" alt="" /><a href="#" onclick="play(false,'candyslottwins',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'candyslottwins',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Candy Slot Twins</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'candyslottwins',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'candyslottwins',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/10a.jpg")" alt="" class="img-width-auto" /><a href="#" onclick="play(false,'zombieslotmania',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'zombieslotmania',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Zombie Slot Mania</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'zombieslotmania',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'zombieslotmania',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-fai.jpg")" alt="" class="img-width-auto" /><a href="#" onclick="play(false,'fireice',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'fireice',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Fire and Ice</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'fireice',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'fireice',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-gos.jpg")" alt="" class="img-width-auto" /><a href="#" onclick="play(false, 'godsofslots', true, false);" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false, 'godsofslots', true, false);" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>God of Slots</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true, 'godsofslots', true, false);">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false, 'godsofslots', true, false);" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-filter="page3" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-hv.jpg")" alt="" /><a href="#" onclick="play(false,'hawaiivacation',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'hawaiivacation',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Hawaii Vacation</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'hawaiivacation',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'hawaiivacation',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PAGE 4 -->
+
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-laf.jpg")" alt="" /><a href="#" onclick="play(false,'lootafruit',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'lootafruit',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Loot A Fruit</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'lootafruit',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'lootafruit',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-ls.jpg")" alt="" /><a href="#" onclick="play(false,'liveslot',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'liveslot',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Live Slot</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'liveslot',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'liveslot',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-nc.jpg")" alt="" /><a href="#" onclick="play(false,'nutscommander',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'nutscommander',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Nuts Commander</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'nutscommander',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'nutscommander',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-ssamba.jpg")" alt="" /><a href="#" onclick="play(false,'safarisamba',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'safarisamba',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Safari Samba</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'safarisamba',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'safarisamba',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-sss.jpg")" alt="" /><a href="#" onclick="play(false,'stinkysocks',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'stinkysocks',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Stinky Socks</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'stinkysocks',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'stinkysocks',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-vg.jpg")" alt="" /><a href="#" onclick="play(false,'vikingsglory',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'vikingsglory',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Viking's Glory</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'vikingsglory',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'vikingsglory',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-wl.jpg")" alt="" /><a href="#" onclick="play(false,'wishlist',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'wishlist',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Wish List</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'wishlist',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'wishlist',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-filter="page4" class="col-xs-12 col-sm-6">
+                                <div class="blog-post blog-post-variant-2">
+                                    <img src="@Url.Content("~/Content/images/screenshot-bt.jpg")" alt="" /><a href="#" onclick="play(false,'blazingtires',true,false); return false;" class="tag bg-mandy">play</a>
+                                    <div class="post-body">
+                                        <div class="post-title"><a href="#" onclick="play(false,'blazingtires',true,false); return false;" class="h5"></a></div>
+                                        <div class="post-meta clearfix">
+                                            <p>
+                                                <span>Blazing Tires</span>
+                                                @*<time datetime="2016"><a href="#" onclick="play(true,'blazingtires',true,false); return false;">Practice</a></time>*@
+                                            </p>
+                                            <!--<div class="post-share">
+                                                <span class="icon icon-primary material-icons-share icon-sm icon-share"></span>
+                                                <ul class="list-share">
+                                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.waltesentertainment.com" target="_blank" class="fa-facebook"></a></li>
+                                                    <li><a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.waltesentertainment.com" target="_blank" class="fa-twitter"></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=http://www.waltesentertainment.com" target="_blank" class="fa-google-plus"></a></li>
+                                                    <li><a href="index.html" class="fa-youtube"></a></li>
+                                                </ul>
+                                            </div>-->
+                                        </div><a href="#" onclick="play(false,'blazingtires',true,false); return false;" class="btn btn-sm btn-transparent">Spin Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Section More News-->
+                            <section>
+                                <h4></h4>
+
+                                <div class="col-xs-12">
+                                    <div class="blog-post-variant-4">
+
+                                        <div class="col-xs-12">
+                                            <div class="blog-post-variant-4">
+
+                                                <div class="col-xs-12">
+                                                    <div class="blog-post-variant-4">
+
+                                                        <div class="col-xs-12">
+                                                            <div class="blog-post-variant-4">
+
+                                                                <d
+                                                            </div>
+                                                        </div>
+                            </section>
+                        </div>
+
+                        <!--Section Sidebar-->
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="sidebar display-3">
+                                <div class="sidebar-module">
+                                    <h4>follow us</h4>
+                                    <div class="wrap border-mandy">
+                                        <h5>See our Latest Promos</h5>
+                                        <p>Be up-to-date with our newest promotions via Facebook, Twitter & more!</p>
+                                        <ul class="list-inline-variant-1">
+                                            <li><a href="#" class="fa-facebook"></a></li>
+                                            <li><a href="#" class="fa-twitter"></a></li>
+                                            <li><a href="#" class="fa-google-plus"></a></li>
+                                            <li><a href="#" class="fa-youtube"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrap bg-gray">
+                                        <h5>View Winning Numbers</h5>
+                                        <p>Looking for the latest winning numbers? Click below to see up to the minute updates for all lottery houses, Cash 5, Pick 10, and VAG drawings! </p>
+                                        <!-- Rd Mailform result field-->
+                                        <div class="rd-mailform-validate"></div>
+                                        <br>
+                                        <a href="@Url.Action("LottoWinningNumbers", "Games")" class="btn btn-sm btn-primary full-width">Winning Numbers</a>
+
+                                    </div>
+                                </div>
+                                <div class="sidebar-module">
+                                    <h4>top lottery houses</h4>
+                                    <div class="border-green">
+                                        <div class="blog-post-variant-3">
+                                            <div class="post-img"><img src="@Url.Content("~/Content/images/sidebar-NY.jpg")" alt="" />></div>
+                                            <div class="post-body bg-dark">
+                                                <div class="post-body-inside bg-dark">
+                                                    <div class="post-title">
+                                                        <h6><a href="@Url.Action("Lotto", "Games")" class="text-uppercase">Play your favorite numbers in the New York lottery!</a></h6>
+                                                    </div><a href="@Url.Action("Lotto", "Games")" class="btn btn-icon-sm btn-transparent"></a>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="blog-post-variant-3">
+                                            <div class="post-img"><img src="@Url.Content("~/Content/images/sidebar-CA.jpg")" alt="" />></div>
+                                            <div class="post-body bg-gray">
+                                                <div class="post-body-inside bg-gray">
+                                                    <div class="post-title">
+                                                        <h6><a href="@Url.Action("Lotto", "Games")" class="text-uppercase">Make your day brighter by winning the California lottery!</a></h6>
+                                                    </div><a href="@Url.Action("Lotto", "Games")" class="btn btn-icon-sm btn-transparent"></a>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="blog-post-variant-3">
+                                            <div class="post-img"><img src="@Url.Content("~/Content/images/sidebar-IL.jpg")" alt="" />></div>
+                                            <div class="post-body bg-dark">
+                                                <div class="post-body-inside bg-dark">
+                                                    <div class="post-title">
+                                                        <h6><a href="@Url.Action("Lotto", "Games")" class="text-uppercase">Winning big in the Windy City lottery would be great!</a></h6>
+                                                    </div><a href="@Url.Action("Lotto", "Games")" class="btn btn-icon-sm btn-transparent"></a>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="blog-post-variant-3">
+                                            <div class="post-img"><img src="@Url.Content("~/Content/images/sidebar-FLA.jpg")" alt="" />></div>
+                                            <div class="post-body bg-dark">
+                                                <div class="post-body-inside bg-dark">
+                                                    <div class="post-title">
+                                                        <h6><a href="@Url.Action("Lotto", "Games")" class="text-uppercase">Get lucky in the sunshine state! Play the Florida lottery!</a></h6>
+                                                    </div><a href="@Url.Action("Lotto", "Games")" class="btn btn-icon-sm btn-transparent"></a>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="blog-post-variant-3">
+                                            <div class="post-img"><img src="@Url.Content("~/Content/images/sidebar-TX.jpg")" alt="" />></div>
+                                            <div class="post-body bg-dark">
+                                                <div class="post-body-inside bg-dark">
+                                                    <div class="post-title">
+                                                        <h6><a href="@Url.Action("Lotto", "Games")" class="text-uppercase">Even the winnings are bigger in the Texas lottery! </a></h6>
+                                                    </div><a href="@Url.Action("Lotto", "Games")" class="btn btn-icon-sm btn-transparent"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                    </section>
+</main>
+
+
+@section AdditionalFooterScripts
+{
+    <script src="~/Scripts/js/Games.js"></script>
+    <script src="~/Scripts/js/casino.js"></script>
+    <script src="~/Scripts/featherlight/featherlight.js"></script>
+    <link rel="stylesheet" href="~/Scripts/featherlight/featherlight.css" />
+    <style type="text/css">
+        html body .featherlight-content .featherlight-close-icon {
+            background-color: rgba(255,0,0,0.75);
+            font-size: 2em;
+            width: 2em;
+            height: 2em;
+        }
+
+        html body .featherlight-content {
+            overflow-y: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var url = $.jStorage.get("VigDns");
+
+            $('#frmgame').attr('src', url);
+            $('.btnlogout').css({ 'display': 'block' });
+            $('.login').css({ 'display': 'none' });
+
+        })
+        function unloadUser() {
+
+            wallet.player = null;
+            $.jStorage.flush();
+            $('.btnlogout').css({ 'display': 'none' });
+            $('.login').css({ 'display': 'block' });
+
+            window.location.href = $("#login").val();
+        }
+    </script>
+}
+

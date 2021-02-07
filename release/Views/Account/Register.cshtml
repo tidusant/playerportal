@@ -1,0 +1,193 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+
+<main class="page-content">
+    @Html.Hidden("Login", @Url.Action("login", "Account"))
+    @Html.Hidden("lobby", @Url.Action("lobby", "home"))
+    @Html.Hidden("APIURL", @System.Configuration.ConfigurationManager.AppSettings["APIUrl"])
+    <section>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="~/">home</a></li>
+                <li class="active">register</li>
+            </ol>
+        </div>
+    </section>
+
+    <!--Section 404-->
+    <section class="section-bottom-50">
+        <div class="container">
+            <div class="row">
+                <!--Section Main-->
+                <div class="col-xs-12 col-lg-8">
+                    <h4>register with us below</h4>
+                    <div class="wrap-1 bg-gray border-crusta">
+                        <form role="form" id="register-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control registration-email" placeholder="Email" data-error="Email address is invalid" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control registration-first-name" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control registration-last-name" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control registration-phone" placeholder="Phone" data-error="Phone number is invalid" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type='text' class="form-control registration-date-of-birth" id='datetimepicker4' placeholder="Date of Birth (mm/dd/yyyy)" required />
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control registration-username" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control registration-password" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control registration-confirm-password" placeholder="Confirm Password" data-match=".registration-password" data-match-error="Passwords do not match" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group input-group-sm">
+                                <label><input type="checkbox" class="registration-terms" required /> I agree to the <a href="#" data-toggle="modal" data-target=".bs-terms-conditions" style="cursor:pointer;">terms and conditions</a></label>
+                            </div>
+                            <div class="form-group modal-footer">
+                                <button type="submit" class="btn btn-primary btn-register">Sign up</button>
+                            </div>
+                        </form>
+                        <h4>having trouble?</h4>
+                        <div class="wrap-1 bg-gray border-tultip">
+                            <h5>Contact Wysotes</h5>
+                            <address>
+                                <dl class="dl-horizontal-variant-1">
+                                    <dt>General inquiries:</dt>
+                                    <dd><a href="mailto:#">contact@wysotes.com</a></dd>
+                                </dl>
+                                <dl class="dl-horizontal-variant-1">
+                                    <dt>Affiliate requests:</dt>
+                                    <dd><a href="mailto:#">affiliates@wysotes.com</a></dd>
+                                </dl>
+                                <dl class="dl-horizontal-variant-1">
+                                    <dt>Customer Support:</dt>
+                                    <dd><a href="mailto:#">support@wysotes.com</a></dd>
+                                </dl>
+                            </address>
+                            <h5>Follow Wysotes</h5>
+                            <dl class="dl-horizontal-variant-1">
+                                <dt>Twitter:</dt>
+                                <dd><a href="#">twitter.com/wysotes</a></dd>
+                            </dl>
+                            <dl class="dl-horizontal-variant-1">
+                                <dt>Facebook:</dt>
+                                <dd><a href="#">https://www.facebook.com/wysotes</a></dd>
+                            </dl>
+                            <dl class="dl-horizontal-variant-1">
+                                <dt>Google+:</dt>
+                                <dd><a href="#">https://plus.google.com/u/0/wysotes</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--Section Sidebar-->
+                <div class="col-xs-12 col-lg-4">
+                    <div class="sidebar display-3">
+                        <div class="sidebar-module">
+                            <h4>follow us</h4>
+                            <div class="wrap border-mandy">
+                                <h5>See our Latest Promos</h5>
+                                <p>Be up-to-date with our newest promotions via Facebook, Twitter & more!</p>
+                                <ul class="list-inline-variant-1">
+                                    <li><a href="#" class="fa-facebook"></a></li>
+                                    <li><a href="#" class="fa-twitter"></a></li>
+                                    <li><a href="#" class="fa-google-plus"></a></li>
+                                    <li><a href="#" class="fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                            <div class="wrap bg-gray">
+                                <h5>View Winning Numbers</h5>
+                                <p>Looking for the latest winning numbers? Click below to see up to the minute updates for all lottery houses, Cash 5, Pick 10, and VAG drawings! </p>
+                                <!-- Rd Mailform result field-->
+                                <div class="rd-mailform-validate"></div>
+                                <br>
+                                <a href="@Url.Action("LottoWinningNumbers", "Games")" class="btn btn-sm btn-primary full-width">Winning Numbers</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@section AdditionalFooterScripts
+{
+    <script src="~/Scripts/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/Scripts/js/validator.js"></script>
+    <script>
+
+        $(function () {
+            var $w = $(wallet);
+
+            $('#datetimepicker4').datetimepicker(
+				{
+				    format: "mm/dd/yyyy",
+				    container: "body",
+				    weekStart: 1,
+				    todayBtn: 1,
+				    autoclose: 1,
+				    todayHighlight: true,
+				    startView: 2,
+				    minView: 2,
+				    forceParse: 0,
+				    showMeridian: true,
+				    pickerPosition: "bottom-left"
+				});
+            $("#register-form").validator().on('submit', function (e) {
+                if (e.isDefaultPrevented()) {
+                    return false;
+                } else {
+                    wallet.register(
+						$(".registration-email").val(),
+						$(".registration-first-name").val(),
+						$(".registration-last-name").val(),
+						$(".registration-phone").val(),
+						$(".registration-date-of-birth").val(),
+						$(".registration-username").val(),
+						$(".registration-password").val(),
+						$(".registration-confirm-password").val(),
+						null, // PIN
+						null, // ConfirmPIN
+						$(".registration-terms").is(":checked")
+						);
+                }
+                return false;
+            });
+
+            $w.on("playerCreatedCalled", function (ev, player) {
+                clearEntryFields();
+                alert("Account created succesfully! Please log in.");
+                window.location.href = "/account/login";
+            });
+
+        });
+
+        function clearEntryFields() {
+            $(".registration-email").val("");
+            $(".registration-first-name").val("");
+            $(".registration-last-name").val("");
+            $(".registration-phone").val("");
+            $(".registration-date-of-birth").val("");
+            $(".registration-username").val("");
+            $(".registration-password").val("");
+            $(".registration-confirm-password").val("");
+            $(".registration-terms").attr("checked", false);
+        }
+
+    </script>
+}

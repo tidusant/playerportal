@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+<head>
+    <!-- Site Title-->
+    <title>@ViewBag.Title</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="~/Content/images/favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/Content/mobilecss/layer.css">
+      <link href="~/Content/css/GDPR.css" type="text/css" rel="stylesheet" media="screen"/>
+      <link href="~/Content/css/PlatinumPlayMain.css" type="text/css" rel="stylesheet" media="screen"/>
+      <link href="~/Content/css/RegistrationCountryFlags.css" type="text/css" rel="stylesheet" media="screen"/>
+      <link href="~/Content/css/DOSPreconnectRegLogin.css" type="text/css" rel="stylesheet" media="screen"/>
+      <link href="~/Content/css/DOSWebparts.css" type="text/css" rel="stylesheet" media="screen"/>
+    <link href="~/Content/css/popup.css" type="text/css" rel="stylesheet" media="screen"/>
+    <link href="~/Content/css/app.min.css" type="text/css" rel="stylesheet" media="screen"/>
+        <link rel="stylesheet" href="~/Content/css/oneClickStyleBundle.css">
+<link rel="stylesheet" href="~/Content/css/branding.css">
+
+
+<script>
+  var isMobile=true;
+</script>
+    <script src="~/Scripts/index.js" ></script>
+    <script type="text/javascript" src="~/Scripts/jquery.cycle2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.cycle2.carousel.js" charset="utf-8"></script>
+    <script type="text/javascript" src="~/Scripts/mobilejs/layer.js" charset="utf-8"></script>
+     <script src="~/Scripts/js/jstorage.js"></script>
+    <script src="~/Scripts/js/lottery.js"></script>
+    <script src="~/Scripts/js/wallet.js"></script>
+    <script src="~/Scripts/js/globals.js"></script>
+
+    <script src="~/Scripts/js/Games.js"></script>
+    <script src="~/Scripts/js/Casino.js"></script>
+
+    <script src="~/Scripts/js/accountmanagement.js"></script>
+    @RenderSection("AdditionalHeaderScripts", false)
+
+
+</head>
+<body>
+
+   <div  >
+         <main id="page">
+            
+            <header class="desktop" style="z-index: 1000">
+
+                 <div class="profile_loggedin" style="position:fixed;width:100%;z-index: 1000">
+                 <div class="small-header ng-scope">
+	<div class="col s12 m12 l12">
+		<div class="small-header-top">
+			<div id="bank-ballance" class="text-grey top_header_navigation_balance valign-wrapper lobby-into-start ng-scope">
+				<div class="user_details small-header-text ng-binding" id="tourMenu" >
+					<span class="ng-binding" >Username:</span>&nbsp;<span id="account_fullname">tidusant</span>
+					
+				</div>
+				<div class="player_balance small-header-text" id="tourBalance" >
+					<span><span>Balance:</span>&nbsp;<span class="small-header-text ng-binding" id="account_balance">$0.00</span></span>
+
+				</div>
+           <div class="logout-select profile_loggedin" onclick="logout()" style="width:33%;float:right;text-align: right;    padding-top: 6px;
+    height: 32px;">
+                              <span>Logout</span>
+                           </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+               <div class="outer" id="headertop">
+                 
+                  <div class="inner">
+                     <div class="pp-logo">
+                        <a href="~/" runat="server" ><img runat="server" src="~/Content/images/tdlogoweb.png" /></a>
+                     </div>
+                     <div class="nav-container" style="margin-top:0px;width: 30%;">
+                        
+                        <div class="selection-container" style="margin-right: 0px;">
+                           <a href="@Url.Action("contact","home")" style="margin-top:0px;text-align: right;">
+                              <div class="contact-select" style="margin-bottom:10px;">
+                                 <span>Contact</span>
+                              </div>
+                           </a>
+                     
+                           <div class="login-select profile_loggedout" id="am_registerbtn_header" style="display: table;" onclick="openLogin()">
+                              <span>Login</span>
+                           </div>
+                            <div class="login-select profile_loggedin" id="am_registerbtn_header" style="display: table;" onclick="window.location='@Url.Action("AccountManagement","Account")'">
+                              <span>Account</span>
+                           </div>
+                        
+                        </div>
+                      
+                     </div>
+                  </div>
+              
+               </div>
+            </header>
+            <div id="contentWrapper">
+               <div class="main-container">
+                  <!-- start -->
+                  <div class="offer-main-container">
+                     @Html.Partial("banner")
+                  </div>
+                  <div class="gamesBlock dos_clear_fix navigation_bar">
+                     <div>
+                        <div>
+                           <span id="p_lt_ctl03_PagePlaceholder_p_lt_ctl00_GamesPlaceholder_p_lt_ctl00_gamesBlock_gamesBlock_zone_DatalistWithCustomQuery_lstItems">
+                              
+                              <span>
+                                 <div data-game-type="Slots"  onclick="window.location='@Url.Action("lotto","games")'">
+                                    <p style="font-size:18px;margin:0px">
+                                       <svg version="1.1" id="Artwork" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.4 113.4" style="enable-background:new 0 0 113.4 113.4; color:rgba(150,15,34,1);" xml:space="preserve">
+                                          <g>
+                                             <g>
+                                                <path d="M68.3,9.2l-3.1,2.4c4.2,5.3,5.8,11.9,5.9,18.6c-29.7,3.9-37.9,23.9-39.5,28.9c-1.3-0.3-2.5-0.4-3.9-0.4                             c-10.2,0-18.5,8.2-18.5,18.3c0,10.1,8.3,18.3,18.5,18.3c3.5,0,6.8-1,9.5-2.6c2.7,6.9,9.6,11.6,17.2,11.6C64.7,104.2,73,96,73,85.9                             c0-6.8-3.8-12.7-9.3-15.9C68.1,61.9,84.2,29.2,68.3,9.2z M40,84.6c-0.2,0.2-0.3,0.5-0.5,0.7c-0.1,0.2-0.2,0.3-0.4,0.5                             c-0.2,0.2-0.4,0.5-0.6,0.7c-0.1,0.1-0.2,0.3-0.4,0.4c-0.3,0.3-0.5,0.5-0.8,0.7c-2.6,2.2-5.9,3.6-9.6,3.6c-8,0-14.5-6.4-14.5-14.3                             c0-7.9,6.5-14.3,14.5-14.3c6.9,0,12.8,4.8,14.2,11.3c0.2,1,0.3,2.1,0.3,3.1c0,0.5,0,1-0.1,1.5c0,0.1,0,0.3-0.1,0.4                             c-0.1,0.4-0.1,0.7-0.2,1.1c0,0.2-0.1,0.3-0.1,0.5c-0.1,0.3-0.2,0.7-0.3,1c-0.1,0.2-0.1,0.3-0.2,0.5c-0.1,0.3-0.2,0.6-0.4,0.9                             c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.3-0.3,0.5-0.4,0.8C40.2,84.3,40.1,84.4,40,84.6z M69,85.9c0,7.9-6.5,14.3-14.5,14.3                             c-6.4,0-12.1-4.2-13.9-10.2c0,0,0.1-0.1,0.1-0.1c0.2-0.2,0.4-0.4,0.6-0.6c0.2-0.2,0.4-0.4,0.6-0.7c0.2-0.2,0.3-0.4,0.5-0.7                             c0.2-0.3,0.4-0.5,0.6-0.8c0.2-0.2,0.3-0.5,0.5-0.8c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.4,0.4-0.7,0.5-1.1c0.1-0.2,0.2-0.3,0.2-0.5                             c0.7-1.6,1.2-3.4,1.4-5.3c0.1-0.6,0.1-1.2,0.1-1.9c0-0.5,0-1.1-0.1-1.6c0-0.2,0-0.4-0.1-0.7c0-0.1,0-0.3,0-0.4                             c2.5-1.7,5.4-2.7,8.5-2.7C62.5,71.6,69,78,69,85.9z M60,68.5c-1.7-0.5-3.6-0.8-5.5-0.8c-3.4,0-6.7,0.9-9.5,2.6                             c-1.8-4.4-5.2-8-9.6-10c1.1-4,7.9-22.3,35.6-26.2C70,49,62.5,63.9,60,68.5z M19,76.6l-3.9,0.8c0.1,0.3,1.6,7.8,7.9,10.4l1.6-3.6                             C20.2,82.3,19,76.6,19,76.6z M48.6,90.8l-3,2.6c0.2,0.2,4.3,4.6,10.3,4.6c0.2,0,0.4,0,0.6,0l-0.2-3.9                             C51.9,94.3,48.6,90.9,48.6,90.8z M104.1,44.5C101.5,25.4,86.5,20.3,78,20.3l-0.2,0c-0.6,0-1.1,0.3-1.4,0.7c-0.4,0.4-0.5,1-0.5,1.5                             C77.8,38.7,85.2,47,97.9,47c1.4,0,2.9-0.1,4.5-0.3c0.5-0.1,1-0.3,1.3-0.8C104.1,45.5,104.2,45,104.1,44.5z M97.9,43                             c-6.4,0-15.1-2-17.8-18.6C85.2,25,96.9,28,99.9,43C99.2,43,98.6,43,97.9,43z"></path>
+                                             </g>
+                                          </g>
+                                       </svg>
+                                    </p>
+                                    <h3>Slot games</h3>
+                                 </div>
+                              </span>
+                              <span>
+                                  
+                                 <div data-game-type="Tables" onclick="window.location='@Url.Action("casino","games")'">
+                                    <p style="font-size:18px;margin:0px">
+                                       <svg version="1.1" id="Artwork" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.4 113.4" style="enable-background:new 0 0 113.4 113.4; color:rgba(150,15,34,1);" xml:space="preserve">
+                                          <g>
+                                             <g>
+                                                <path d="M101,17.4c-0.3-0.1-0.5-0.1-0.8-0.2l-15.9-3.1c-0.5-0.2-1-0.3-1.6-0.4c-0.3,0-0.5-0.1-0.8-0.1l-0.5,0l-19.9-3.3                             c-0.5-0.1-1-0.1-1.5-0.1c-0.3,0-0.5,0-0.8,0l-45.6,4.2c-2.1,0.2-3.9,1.1-5.3,2.6c-1.3,1.5-1.9,3.3-1.7,5.2l8.4,72.6                             c0.4,3.6,3.8,6.3,7.8,6.3c0.3,0,0.5,0,0.8,0l30.5-2.8l0,0l15.8,2l15.2,3c4.2,0.8,8.2-1.6,8.9-5.4l12.5-72.1                             C107.3,22.1,104.9,18.5,101,17.4z M66.4,92.1l-40.7,4c-2.6,0.2-4.9-1.4-5.2-3.7l-8.2-68.9c-0.1-1.1,0.2-2.2,1-3                             c0.8-0.9,1.9-1.4,3.2-1.5l40.7-4c0.2,0,0.3,0,0.5,0c2.4,0,4.5,1.6,4.7,3.7l8.2,68.9C70.9,89.9,69,91.9,66.4,92.1z M80.6,91.8                             c-0.1,2.3-2.3,4-4.9,3.8L73,95.5c2.2-1.4,3.5-3.8,3.2-6.4l-8.3-71.7l11.2,0.7c0.2,0,0.3,0,0.5,0.1c2.4,0.4,4.1,2.3,4.1,4.4                             L80.6,91.8z M100.8,26.3L89.2,94.7c-0.4,2.1-2.4,3.4-4.7,3.2c0.8-1,1.3-2.3,1.4-3.7l3.5-73c0-0.4,0-0.9-0.1-1.3l7.6,1.4                             c0.2,0,0.3,0.1,0.5,0.1C99.7,22.1,101.2,24.2,100.8,26.3z M55.2,51.2L40.2,36.9L28.9,53.6l0,0c-2.1,3.1-1,7.2,2.5,9.1                             c3.5,1.9,8,0.9,10.2-2.2c0.7-1.1,2-1.2,2.9-0.3c2.8,2.7,7.5,2.8,10.4,0.3C57.8,58.1,58,53.9,55.2,51.2L55.2,51.2z M44.5,64.5                             c-0.6-0.6-1.7-0.5-2.2,0.2l-3.8,5.7c-0.6,0.9,0.2,1.9,1.3,1.8l8.8-0.8c1.1-0.1,1.6-1.3,0.9-2L44.5,64.5z"></path>
+                                             </g>
+                                          </g>
+                                       </svg>
+                                    </p>
+                                    <h3>Live games</h3>
+                                 </div>
+                                  
+                              </span>
+                              
+                        </div>
+                     </div>
+                    </div>  
+                      @RenderBody()
+                      
+                                                
+                     
+                  
+                  
+            </div>
+         </main>
+         
+            <!-- footer start -->
+            <footer class="site" style="background: #8a8c8e;color: #e3e3e4;padding: 20px;text-align: center;">
+               
+                 
+               <div >
+                  <div class="disclaimer-inner pointer" style="font-size:24px;">
+                     <b style="color: #c0122a;">T&D</b> entertainment
+                  </div>
+                  <div class="copyright" style="font-size:14px;">© 2018. All Rights Reserved.</div>
+               </div>
+            </footer>
+         
+      
+
+
+
+       
+
+
+       <div class="login-popup outer popup desktop" id="popup-overlay" style="position: fixed;cursor:pointer;z-index: 1001">
+           <!--</div>
+           <div class="desktop" style="top: 0;z-index: 1001;width: 100%;font-size:14px;display:none;position:absolute">-->
+       
+
+
+    <form class="form-wrapper form-wrapper__login__size form-wrapper__login__padding"  onsubmit="return loginSubmit()">
+    <div id="login-popup" style="    font-size: 18px;display:none;margin-top:20px;cursor:default">
+
+        <div class="form-logo-container" id="Login_Header">
+         
+            <p class="login-text" id="Login_LoginTo">Login to Platinum Play Casino </p>
+
+         
+            <div class="login-body" index="0">
+                
+
+                
+                <div class="form-group">
+                    <div class="form-input-wrapper ">
+                        <div class="input-validation-icons">
+                            <svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg><span class="name"></span>
+                            <svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg><span class="name"></span>
+                        </div>
+                        <input type="text" value="" class="form-input validate " id="uname"  name="Login_Username" required="required" autocomplete="off" autocorrect="off" autocapitalize="off" aria-required="true" tabindex="1" placeholder="Username" style="width:95%">
+                        <label for="Login_Username" class="form-label ">Username</label>
+                    </div>
+
+                </div>
+
+                
+                <div class="form-group form__group__margin">
+                    <div class="form-input-wrapper ">
+                    
+
+                        </div>
+                        <input type="password" class="reveal-password-input form-input validate " id="pwd" name="Login_Password" required="required" aria-required="true" tabindex="2" placeholder="Password" style="width:95%">
+                        <label for="Login_Password" class="form-label  input-label">Password</label>
+                    </div>
+
+                
+                </div>
+                    
+            </div>
+            <div id="captchaContent" style="display: none;">
+              <div class="capt" > 
+               <h4 type="text" id="mainCaptcha"></h4>
+                 
+               
+               </div>
+             <input type="text" value="" class="form-input validate " id="txtInput" autocomplete="off" autocorrect="off" autocapitalize="off" aria-required="true" tabindex="1" placeholder="Captcha" style="width:95%">
+          </div>
+
+            <div class="loader-container" id="loading_login"><div class="loader" id="loading_spinner"></div></div>
+        
+            
+            <input type="submit" value="Login" class="login-submit" tabindex="4" >
+            
+
+        </div>
+    </div>
+    </form>
+
+</div>
+
+      
+
+    @RenderSection("AdditionalFooterScripts", false)
+</body>
+</html>
