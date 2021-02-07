@@ -30,9 +30,7 @@
     <RestorePackages>true</RestorePackages>
     <Use64BitIISExpress />
     <UseGlobalApplicationHostFile />
-    <DockerComposeProjectPath>docker-compose.dcproj</DockerComposeProjectPath>
-    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerLaunchUrl>http://{ServiceIPAddress}</DockerLaunchUrl>
+    
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>

@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerPortal", "PlayerPortal.csproj", "{E065F7D9-F8F5-46B5-8B76-2BCCF061A56D}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{ED3D0524-E0D4-4318-A55C-A29AEB8D14E6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{E065F7D9-F8F5-46B5-8B76-2BCCF061A56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E065F7D9-F8F5-46B5-8B76-2BCCF061A56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E065F7D9-F8F5-46B5-8B76-2BCCF061A56D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED3D0524-E0D4-4318-A55C-A29AEB8D14E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED3D0524-E0D4-4318-A55C-A29AEB8D14E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED3D0524-E0D4-4318-A55C-A29AEB8D14E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED3D0524-E0D4-4318-A55C-A29AEB8D14E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
