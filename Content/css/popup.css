@@ -1,0 +1,325 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000;
+}
+
+svg {
+    width: 2em;
+    height: 2em;
+}
+
+p {
+    color: #fff;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+.desktop .form-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 605px;
+    height: 525px;
+    overflow: hidden;
+    border: 2px solid #6c7f88;
+    background: #455055;
+    border-radius: 10px;
+    padding: 27px;
+    font-family: sans-serif;
+}
+
+    .desktop .form-wrapper .reg-wrapper {
+        width: 1800px;
+        margin-left: -27px;
+        color: #fff;
+    }
+
+    .desktop .form-wrapper .registration-pane {
+        float: left;
+        width: 600px;
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+
+.desktop .form-input-col-wrapper {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.desktop .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login-logo-desktop {
+    background: url("../../Content/styles/themes/platinumplaycasino/images/logo.png") no-repeat center;
+    height: 60px;
+    width: auto;
+    background-size: auto 60px;
+}
+
+.desktop .form-input-wrapper {
+    display: table;
+    min-width: 100%;
+}
+
+.desktop .form-input {
+    width: 100%;
+    background-color: #6c7f88;
+    border: 1px solid #6c7f88;
+    border-radius: 5px;
+    height: 42px;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.desktop .form-login-but {
+    font-size: 13px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    background-color: #95aeb9;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    box-shadow: 5px 5px 30px rgba(0,0,0,.5);
+    padding: 18px;
+    color: #fff;
+}
+
+    .desktop .form-login-but:hover {
+        background-color: #c0122a;
+    }
+
+.desktop .form-wrapper .register-nextstep-btn {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.desktop .login-submit svg.icon, .desktop .register-nextstep-btn svg.icon {
+    color: #fff;
+    stroke-width: 0;
+    fill: currentColor;
+    padding-left: 10px;
+}
+
+.desktop .login-submit, .desktop .register-nextstep-btn {
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 50px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    box-shadow: 5px 5px 30px rgba(0,0,0,.5);
+    height: 50px;
+    width: 100%;
+    margin: 0 auto 20px;
+    background-color: #95aeb9;
+    color: #fff;
+    display: inline;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.desktop .form-wrapper .reg-foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.desktop .form-wrapper .backbtn-wrapper {
+    position: relative;
+    clear: both;
+}
+
+.desktop .input-password-field-viewpassword {
+    position: absolute;
+    top: 14px;
+    right: 1px;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+    fill: currentColor;
+}
+
+.desktop .error, .desktop .form-error {
+    font-size: .875em;
+    display: none;
+    position: absolute;
+    background: #95aeb9;
+    padding: .125em .313em;
+    z-index: 9999;
+    box-shadow: 0 4px 11px rgba(0,0,0,.6);
+    margin-top: -10px;
+    width: 100%;
+}
+
+    .desktop .error p, .desktop .form-error p {
+        font-size: .875em;
+        padding: 5px;
+        margin: 0;
+    }
+
+.desktop .form-wrapper.form-wrapper__login__padding {
+    padding: 28px 20px;
+}
+
+.desktop .form-wrapper.form-wrapper__login__size {
+    max-width: 350px;
+    height: auto;
+}
+
+.desktop .form-label {
+    display: table-header-group;
+    text-align: left;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.desktop .form-sign-up a, .desktop .form-wrapper a {
+    color: #fff;
+}
+
+.login-Attemps-Wrapper, .desktop .input-validation-icons {
+    display: none;
+}
+
+.desktop .form-wrapper .prog-dot:hover {
+    background-color: #c0122a;
+}
+
+.desktop .form-wrapper {
+    position: relative;
+}
+
+
+    .desktop .form-wrapper select {
+        background-image: url("/Content/styles/themes/platinumplaycasino/images/down-arrow.png");
+        background-position: 96% center;
+        background-repeat: no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-left: 10px;
+    }
+
+    .desktop .form-wrapper .mobile-dialing-code-wrapper {
+        position: relative;
+        background-color: #6c7f88;
+        border: 1px solid #6c7f88;
+        height: 42px;
+        margin-top: 5px;
+        border-radius: 3px;
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+        -moz-opacity: .5;
+        -khtml-opacity: .5;
+    }
+
+        .desktop .form-wrapper .mobile-dialing-code-wrapper select {
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding-left: 4px;
+            height: 36px;
+            background-image: none;
+            pointer-events: none;
+            padding-top: 5px;
+            float: left;
+            width: auto;
+        }
+
+    .desktop .form-wrapper .selected-country {
+        background-color: #6c7f88;
+        border: 1px solid #6c7f88;
+        border-radius: 3px;
+        opacity: .5;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 5px;
+        padding-left: 16px;
+        text-align: left;
+    }
+
+        .desktop .form-wrapper .selected-country p {
+            margin: 0;
+        }
+
+    .desktop .form-wrapper .form__col__rel select {
+        background-image: none;
+        padding-right: 0;
+    }
+
+    .desktop .form-wrapper .form__col__rel .form-input-narrow-wrapper:after {
+        background-image: url("/Content/styles/themes/platinumplaycasino/images/select-arrow.png");
+        background-position: center center;
+        overflow: hidden;
+        display: block;
+        width: 15px;
+        height: 38px;
+        position: absolute;
+        right: 1px;
+        top: 7px;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        background-color: #6c7f88;
+    }
+
+.desktop .prog-dots .prog-dot {
+    background-color: #c0122a;
+}
+
+.desktop .prog-dots span.prog-dot.active {
+    background-color: #be3e50;
+}
+
+.desktop #register .form-error {
+    width: 93%;
+}
+
+.desktop #login .input-password-field-viewpassword {
+    top: 14px;
+    right: 1px;
+}
+
+/*captcha*/
+.capt{
+    background-color:grey;
+    width: 100%;
+    
+}
+
+#mainCaptcha{
+    position: relative;
+   
+    
+}
+#txtInput, #Button1{
+    position: relative;
+    
+}

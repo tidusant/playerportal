@@ -1,0 +1,247 @@
+﻿@model string
+@{
+		ViewBag.Title = "Keno";
+}
+
+<!-- Page Content-->
+<main class="page-content" id="play-keno">
+		<section>
+				<div class="container">
+						<ol class="breadcrumb">
+								<li><a href="~/">home</a></li>
+								<li class="active">game</li>
+						</ol>
+				</div>
+		</section>
+		<section class="section-bottom-30">
+				<div class="container">
+						<h4 class="keno-header"></h4>
+						<div class="row">
+								<div class="col-xs-12">
+										<dl class="terms-list wrap border-primary">
+												<dd class="text-sm-left">
+
+														<div class="big-ball-container" id="keno-container">
+																<div class="play-game-container">
+																		<div class="clearfix"></div>
+																		<div class="row">
+																				<div class="col-md-8 pick-game">
+																					<span class="glyphicon glyphicon-certificate"></span> <select class="sub-games-list"></select>
+																				</div>
+																				@*
+																				<div class="col-md-2">
+																						<span class="label label-success">1</span>
+																						<span class="bold">Pick Your Numbers</span>
+																				</div>
+																				<div class="col-md-1 visible-lg">
+																						<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+																				</div>
+																				<div class="col-md-2">
+																						<span class="label label-success">2</span>
+																						<span class="bold">Choose # of Draws</span>
+																				</div>
+																				<div class="col-md-1 visible-lg">
+																						<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+																				</div>
+																				<div class="col-md-2">
+																						<span class="label label-success">3</span>
+																						<span class="bold">Get the Ticket</span>
+																				</div>
+																				*@
+																				<div class="col-md-4 text-right">
+																						<button type="button" class="btn btn-success btn-sm quickPick" onclick="quickPick(0, this)">
+																								<span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Quick pick
+																						</button>
+																						<button type="button" class="btn btn-sm quickPick" onclick="clearItems(0, this)">
+																								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear
+																						</button>
+																				</div>
+																		</div>
+																</div>
+																<div class="clearfix"></div>
+																<div class="divider">&nbsp;</div>
+																<div id="lines">
+																		<div class="lineHolder">
+																				<div class="row">
+																						<div class="col-xs-2 hidden-lg">
+																								<button type="button" class="btn btn-success btn-sm moveMtable" onclick="prevMtable()">
+																										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+																								</button>
+																						</div>
+																						<div class="col-xs-8 col-lg-12">
+																								<h4 class="text-success bold lineNumber text-center hidden-lg"></h4>
+																								<div class="mtable_holder">
+																										<div style="width:1140px">
+
+																												<div class="mtable">
+																														<div class="select_descr pull-left">Select 5 Numbers</div>
+																														<div class="pull-right">
+																																<div class="btn btn-xs" onclick="clearItems(1, this)">
+																																		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="pull-right">
+																																<div class="btn btn-success btn-xs" onclick="quickPick(1, this)">
+																																		<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="clearfix"></div>
+																														<div class="liHolder"></div><div class="select_descr_l"></div><div class="luckyHolder"></div>
+																														<div class="clearfix"></div>
+																														<div class="extra-data"><input type="checkbox" class="extra-boolean" /> <span class="extra-text"></span></div>
+																												</div>
+																												<div class="mtable">
+																														<div class="select_descr pull-left">Select 5 Numbers</div>
+																														<div class="pull-right">
+																																<div class="btn btn-xs" onclick="clearItems(2, this)">
+																																		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="pull-right">
+																																<div class="btn btn-success btn-xs" onclick="quickPick(2, this)">
+																																		<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="clearfix"></div>
+																														<div class="liHolder"></div><div class="select_descr_l"></div><div class="luckyHolder"></div>
+																														<div class="clearfix"></div>
+																														<div class="extra-data"><input type="checkbox" class="extra-boolean" /> <span class="extra-text"></span></div>
+																												</div>
+																												<div class="mtable">
+																														<div class="select_descr pull-left">Select 5 Numbers</div>
+																														<div class="pull-right">
+																																<div class="btn btn-xs" onclick="clearItems(3, this)">
+																																		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="pull-right">
+																																<div class="btn btn-success btn-xs" onclick="quickPick(3, this)">
+																																		<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="clearfix"></div>
+																														<div class="liHolder"></div><div class="select_descr_l"></div><div class="luckyHolder"></div>
+																														<div class="clearfix"></div>
+																														<div class="extra-data"><input type="checkbox" class="extra-boolean" /> <span class="extra-text"></span></div>
+																												</div>
+																												<div class="mtable">
+																														<div class="select_descr pull-left">Select 5 Numbers</div>
+																														<div class="pull-right">
+																																<div class="btn btn-xs" onclick="clearItems(4, this)">
+																																		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="pull-right">
+																																<div class="btn btn-success btn-xs" onclick="quickPick(4, this)">
+																																		<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="clearfix"></div>
+																														<div class="liHolder"></div><div class="select_descr_l"></div><div class="luckyHolder"></div>
+																														<div class="clearfix"></div>
+																														<div class="extra-data"><input type="checkbox" class="extra-boolean" /> <span class="extra-text"></span></div>
+																												</div>
+																												<div class="mtable">
+																														<div class="select_descr pull-left">Select 5 Numbers</div>
+																														<div class="pull-right">
+																																<div class="btn btn-xs" onclick="clearItems(5, this)">
+																																		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="pull-right">
+																																<div class="btn btn-success btn-xs" onclick="quickPick(5, this)">
+																																		<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+																																</div>
+																														</div>
+																														<div class="clearfix"></div>
+																														<div class="liHolder"></div><div class="select_descr_l"></div><div class="luckyHolder"></div>
+																														<div class="clearfix"></div>
+																														<div class="extra-data"><input type="checkbox" class="extra-boolean" /> <span class="extra-text"></span></div>
+																												</div>
+																										</div>
+																								</div>
+																						</div>
+																						<div class="col-xs-2 hidden-lg">
+																								<button type="button" class="btn btn-success btn-sm moveMtable" onclick="nextMtable()">
+																										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+																								</button>
+																						</div>
+																				</div>
+																		</div>
+
+																</div>
+
+																<div class="">
+																		<div class="pull-right">
+																				<button id="removeLines" type="button" class="btn btn-danger btn-sm quickPick hiddenx" onclick="removeLine()">
+																						<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Remove Lines
+																				</button>
+																				<button type="button" class="btn btn-primary btn-sm quickPick" onclick="addLine()">
+																						<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Lines
+																				</button>
+																		</div>
+																</div>
+
+																<div class="">
+																		<div class="clearfix">&nbsp;</div>
+																		<div class="row">
+																				<div class="col-lg-6">
+																						<div class="panel panel-success collapse">
+																								<div class="panel-heading">
+																										<h3 class="panel-title"><strong>Choose number of rows</strong></h3>
+																								</div>
+																								<div class="panel-body">
+																										<div class="row" id="row_itm_holder">
+																												<div class="col-md-3"><div class="row_itm active" rel=1 rev="2.1"><h3><strong>1</strong></h3>Regular Price<br>$2.10 / Line</div></div>
+																												<div class="col-md-3"><div class="row_itm" rel=4 rev="2"><h3><strong>4</strong></h3>Save 5%<br>$2.00 / Line</div></div>
+																												<div class="col-md-3"><div class="row_itm" rel=8 rev="1.89"><h3><strong>8</strong></h3>Save 10%<br>$1.89 / Line</div></div>
+																												<div class="col-md-3"><div class="row_itm" rel=24 rev="1.79"><h3><strong>24</strong></h3>Save 15%<br>$1.79 / Line</div></div>
+																										</div>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="col-lg-6">
+																						<div class="panel panel-danger" style="margin-top:25px;">
+																								<div class="panel-heading">
+																										<h3 class="panel-title"><strong>Get the ticket</strong></h3>
+																								</div>
+																								<div class="panel-body">
+																										<div class="row">
+																												<div class="col-xs-6">
+																														<div id="priceHolder">
+																																<h4>
+																																		<select class="ticketPrice"></select>
+																																</h4>
+																																<h4><span class="priceLineCount"> Lines</span></h4>
+																																<h4><input type="number" class="advancePlay" style="width:50px;" value="1" min="1" /> Draw(s)*</h4>
+																																<h3 class="bold">Total:<br />CaD <span class="playtotal"></span></h3>
+																																<h5>*Maximum of <span class="maxAdvancePlay"></span></h5>
+																														</div>
+																												</div>
+																												<div class="col-xs-6">
+																														<div class="" id="please-log-in">Please Log in to order</div>
+																														<br>
+																														<div class="btn btn-lg btn-success" id="addToCart">Order</div>
+																												</div>
+																										</div>
+																								</div>
+																						</div>
+																				</div>
+																		</div>
+																</div>
+														</div>
+												</dd>
+										</dl><a href="~/games/winningnumbers" class="btn btn-primary btn-sm btn-no-arrow">winning numbers</a>
+								</div>
+						</div>
+				</div>
+		</section>
+</main>
+<script>
+		var gameID = "@Model"
+</script>
+@section AdditionalFooterScripts
+{
+		<script src="~/Scripts/js/lottery-keno.js"></script>
+		<link rel="stylesheet" href="~/Content/css/keno.css">
+}

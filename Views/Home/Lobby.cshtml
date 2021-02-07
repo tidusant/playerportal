@@ -1,0 +1,123 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutLobby.cshtml";
+    ViewBag.Title = "Lobby";
+}
+
+<style>
+    #frmgame {
+        background: #ffffff;
+    }
+</style>
+<!-- Page Content-->
+<div class="main" style="padding:0px">
+    <div class="content">
+        @Html.Hidden("Login", @Url.Action("login", "Account"))
+        @Html.Hidden("lobby", @Url.Action("lobby", "home"))
+        @Html.Hidden("APIURL", @System.Configuration.ConfigurationManager.AppSettings["APIUrl"])
+        <!--Section Swiper-->
+        <section class="section-50">
+            <div class="container">
+                <!-- Swiper-->
+                <div class="container white_bg">
+                    <iframe id="frmgame" src="" frameborder="1" style="margin:0; width:100%; height:100vh; border:none; overflow:hidden;"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+@section AdditionalFooterScripts
+        {
+
+    <script src="~/Scripts/js/Games.js"></script>
+    <script src="~/Scripts/js/casino.js"></script>
+    <script src="~/scripts/js/wallet.js"></script>
+
+    <script src="~/scripts/js/login.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var url = $.jStorage.get("VigDns");
+            if (url == null) {
+                $('.btnlogout').css({ 'display': 'none' });
+                $('.login').css({ 'display': 'block' });
+                $('.btnaccount').css({ 'display': 'none' });
+                openLogin();
+                //window.location.href = '/Account/login';
+            }
+
+            if (url != null) {
+                url = url.replace("&amp;", "&");
+                $('#frmgame').attr('src', url);
+                $('.btnlogout').css({ 'display': 'block' });
+                $('.login').css({ 'display': 'none' });
+                $('.btnaccount').css({ 'display': 'block' });
+                var link = $("<a>");
+                link.attr("href", "#");
+                link.text('Account( ' + $.jStorage.get("Name") + ' )');
+
+                link.attr("onclick", "GetPlayerDetails()");
+                $(".btnaccount").html(link);
+            }
+           
+            //reset amount on page           
+            var Player = $.jStorage.get("Player");
+            //Player.TotalAmount = 0;  //Need change later
+            $.jStorage.set("Player", Player);
+            loadUser();
+        })
+        function unloadUser() {
+            wallet.player = null;
+            wallet.account = null;
+            wallet.LogoutPlayer();
+
+        }
+        function GetPlayerDetails() {
+
+            wallet.getPlayerDetails();
+        }
+        var checkIframe = 1;
+
+        $('#frmgame').on("load", function () {
+           
+            var url = $.jStorage.get("VigDns");
+            var Isrc = document.getElementById("frmgame").src;
+            if (Isrc == url && checkIframe == 1) {
+                checkIframe = checkIframe + 1;
+
+            }
+            else {
+                checkIframe = checkIframe + 1;
+                $.jStorage.set("returnFromLobby", true);
+                $.jStorage.set("refundUrl", window.location.href = siteurl) // Added for refund url
+                if ($.jStorage.get("OTPIsUsed") == false && checkIframe == 2) {
+
+                    $.jStorage.set("OTPIsUsed", true);
+
+                }
+                else {
+                    wallet.getPlayerDetails();
+                }
+
+            }
+        });
+        $(function () {
+            $("#homebutton").click(function (e) {
+                var action = function () {
+                    setTimeout(function () { alert("home button clicked") }, 5000);
+                }
+                var innerButton = $("iframe#frmgame").contents().find('data-ng-click="returnFunds()"');
+                e.detail = action;
+                var evt = new CustomEvent('click', e);
+                innerButton[0].dispatchEvent(evt);
+            });
+        });
+
+        window.onload = function (e) {
+           
+            wallet.Launch();
+        }
+
+    </script>
+}
+

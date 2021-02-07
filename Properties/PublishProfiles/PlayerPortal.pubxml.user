@@ -1,0 +1,4302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\1. Releases\Player Portal</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/09/2013 15:59:20</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>10/01/2019 23:34:18</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>10/01/2019 23:34:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/22/2017 12:45:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/22/2017 12:45:20</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>12/29/2018 17:47:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/23/2018 12:17:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>12/27/2018 15:38:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>12/27/2018 15:35:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>12/27/2018 15:35:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>12/27/2018 15:35:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>12/27/2018 15:35:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>12/27/2018 15:35:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>09/10/2013 01:20:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>09/10/2013 01:20:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>09/10/2013 01:20:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>12/27/2018 15:35:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>09/10/2013 01:20:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/28/2018 16:08:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/26/2018 16:37:34</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/12/2012 10:49:34</publishTime>
+    </File>
+    <File Include="bin/PlayerPortal.dll">
+      <publishTime>02/06/2021 17:26:26</publishTime>
+    </File>
+    <File Include="bin/PlayerPortal.pdb">
+      <publishTime>02/06/2021 17:26:26</publishTime>
+    </File>
+    <File Include="bin/QuantumBL.dll">
+      <publishTime>02/14/2019 07:27:59</publishTime>
+    </File>
+    <File Include="bin/QuantumDL.dll">
+      <publishTime>02/14/2019 07:28:00</publishTime>
+    </File>
+    <File Include="bin/QuantumModels.dll">
+      <publishTime>02/14/2019 07:27:58</publishTime>
+    </File>
+    <File Include="bin/QuantumUtility.dll">
+      <publishTime>02/14/2019 07:27:57</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/09/2013 11:04:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/27/2018 11:34:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>07/09/2013 11:04:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/27/2018 11:29:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/10/2014 13:56:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/27/2018 11:30:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/27/2018 11:34:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/27/2018 11:34:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/27/2018 11:34:24</publishTime>
+    </File>
+    <File Include="bin/WalletAPI.Casino.QuantumBL.dll">
+      <publishTime>02/18/2019 08:48:35</publishTime>
+    </File>
+    <File Include="bin/WalletAPI.Casino.QuantumDL.dll">
+      <publishTime>02/14/2019 07:27:48</publishTime>
+    </File>
+    <File Include="bin/WalletAPI.Casino.QuantumModels.dll">
+      <publishTime>02/18/2019 08:48:29</publishTime>
+    </File>
+    <File Include="bin/WalletAPI.Casino.QuantumUtility.dll">
+      <publishTime>02/18/2019 08:45:11</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/22/2014 12:27:34</publishTime>
+    </File>
+    <File Include="Content/.DS_Store">
+      <publishTime>04/17/2019 07:05:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>05/12/2018 18:33:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>05/12/2018 18:33:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/29/2018 04:16:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-theme.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-theme.min.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/calculator.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/common.css">
+      <publishTime>07/10/2019 07:59:12</publishTime>
+    </File>
+    <File Include="Content/css/grid.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/hover-min.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/index.css">
+      <publishTime>06/27/2019 05:30:52</publishTime>
+    </File>
+    <File Include="Content/css/keno.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/loadingmodal.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/lotto.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/membercenter.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/newbankpage.css">
+      <publishTime>07/10/2019 07:14:17</publishTime>
+    </File>
+    <File Include="Content/css/normalize.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/select2.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/select2.min.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/site-styles.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/Site.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.eot">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.svg">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.ttf">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff2">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/FontAwesome.otf">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/materialdesignicons-webfont.eot">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/materialdesignicons-webfont.svg">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/materialdesignicons-webfont.ttf">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/materialdesignicons-webfont.woff">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/materialdesignicons-webfont.woff2">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/MaterialIcons-Regular.eot">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/MaterialIcons-Regular.ijmap">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/MaterialIcons-Regular.ttf">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/MaterialIcons-Regular.woff">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/fonts/MaterialIcons-Regular.woff2">
+      <publishTime>12/28/2018 16:09:04</publishTime>
+    </File>
+    <File Include="Content/images/01 %281%29.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/01.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/01a.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/02.png">
+      <publishTime>12/29/2018 17:39:03</publishTime>
+    </File>
+    <File Include="Content/images/03.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/04.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/05.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/07.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/1024.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/1051.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/1052.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/1053.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/1055.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/10a.jpg">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/14444.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/14494.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/18a.jpg">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/18b.jpg">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/21a.jpg">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/40a.jpg">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/41a.jpg">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/images/50a.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/51a.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/537.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/60a.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/61a.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/63.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/66.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/7a.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/8a.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/9a.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/ag.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/ag1.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/ag2.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/agin-qr1.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/agqj-qr.jpg">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/ajax-loader.gif">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/arrow2.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/arrow3.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/arr_sub.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/athn.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/Baccarat.svg">
+      <publishTime>12/28/2018 16:09:06</publishTime>
+    </File>
+    <File Include="Content/images/background.jpg">
+      <publishTime>12/29/2018 17:39:06</publishTime>
+    </File>
+    <File Include="Content/images/banner-casino-01ef3ea472d76e3232e325d544c8aa626.jpg">
+      <publishTime>12/29/2018 17:39:07</publishTime>
+    </File>
+    <File Include="Content/images/banner-casino-1fbdcbf4d55de5d44239e76a4ea356e42.jpg">
+      <publishTime>12/29/2018 17:39:08</publishTime>
+    </File>
+    <File Include="Content/images/banner-egames-09d4239b1dcc0f31ab6353ffbd7179d68.jpg">
+      <publishTime>12/29/2018 17:39:07</publishTime>
+    </File>
+    <File Include="Content/images/banner-egames-1b376b4f184d0260fa501fb705b3e38c5.jpg">
+      <publishTime>12/29/2018 17:39:08</publishTime>
+    </File>
+    <File Include="Content/images/banner-egames-22d16e51fd0414a6203c4753d16f4d969.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/banner-index-0c78129bdfe9242aaedf941399747176f.jpg">
+      <publishTime>12/29/2018 17:39:08</publishTime>
+    </File>
+    <File Include="Content/images/banner-index-1b8035762de8d5aa53e5f15cbbb70b49f.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/banner-index-298c426e721849d01896e6e304eaca788.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/banner-index-3b376b4f184d0260fa501fb705b3e38c5.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/banner-index-40ca977a6ee9e61f55734110c9558aa58.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/banner-lottery-0f1903a2213d7ef59e62459d65f8b5b48.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/banner-lottery-18d6ee5a1bb935f685bca49988c66750a.jpg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/banner-lottery-2cec5f236102a5d3a972a05e346dfdee7.jpg">
+      <publishTime>12/29/2018 17:39:10</publishTime>
+    </File>
+    <File Include="Content/images/banner-sports-0247e8519ca0f1228b7f84c61975a28c6.jpg">
+      <publishTime>12/29/2018 17:39:10</publishTime>
+    </File>
+    <File Include="Content/images/banner1.jpg">
+      <publishTime>12/29/2018 17:39:06</publishTime>
+    </File>
+    <File Include="Content/images/banner_info.png">
+      <publishTime>12/29/2018 17:39:05</publishTime>
+    </File>
+    <File Include="Content/images/bg.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/bg1.jpg">
+      <publishTime>12/29/2018 17:39:09</publishTime>
+    </File>
+    <File Include="Content/images/bg2.jpg">
+      <publishTime>12/29/2018 17:39:10</publishTime>
+    </File>
+    <File Include="Content/images/bg3.jpg">
+      <publishTime>12/29/2018 17:39:10</publishTime>
+    </File>
+    <File Include="Content/images/bg4.jpg">
+      <publishTime>12/29/2018 17:39:10</publishTime>
+    </File>
+    <File Include="Content/images/bg5.jpg">
+      <publishTime>12/29/2018 17:39:10</publishTime>
+    </File>
+    <File Include="Content/images/bg6.jpg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/bg7.jpg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/bg8.png">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/bg9 %281%29.png">
+      <publishTime>12/29/2018 17:39:14</publishTime>
+    </File>
+    <File Include="Content/images/bg9.png">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/bgimage.jpg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/bjl.png">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/BlackJack.svg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/bookofdead.png">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/btn1 %281%29.jpg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/btn1.jpg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/btn2.jpg">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/btnblack.png">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/buttons2.png">
+      <publishTime>12/29/2018 17:39:15</publishTime>
+    </File>
+    <File Include="Content/images/Cardgame.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/cashfi.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-9f.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-af.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-at.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-bg.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-bt.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-cgw.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-cj.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-cst.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-df.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-dg.png">
+      <publishTime>12/29/2018 17:39:16</publishTime>
+    </File>
+    <File Include="Content/images/casino-ea.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-ep.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-er.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-eta.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-ff.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-fh.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-fi.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-fk.jpg">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-fk.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-fs.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-gos.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-gs.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-ha.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-ia.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-ic.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-jc.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-lc.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-lf.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-lm.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-ls.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-mp.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-nc.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-pok.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-pph.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-pt.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-rc.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-rf.png">
+      <publishTime>12/29/2018 17:39:17</publishTime>
+    </File>
+    <File Include="Content/images/casino-rw.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-s.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-s7.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sb.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sbabes.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sbound.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-secretp.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sp.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sr.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-ss.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sskies.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sss.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-sth.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-stw.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-swh.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-tc.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-tj.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-tw.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-up.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-vg.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-wl.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-wm.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-wom.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-wws.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-yol.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-yotm.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/casino-zs.png">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/categories-1new.jpg">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/categories-2new.jpg">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/categories-3new.jpg">
+      <publishTime>12/29/2018 17:39:18</publishTime>
+    </File>
+    <File Include="Content/images/categories-4new.jpg">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/categories-5new.jpg">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/close.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/common_icons.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor1-light1.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor1-light2.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor1-light3.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor1-light4.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor1.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor2-light1.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor2-light2.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor2-light3.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor2-light4.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/decor2.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/def.jpg">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/dlm.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/event3.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/event4.jpg">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/event6.jpg">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/event7.jpg">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/evj.png">
+      <publishTime>12/29/2018 17:39:19</publishTime>
+    </File>
+    <File Include="Content/images/faq1.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/faq2.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/faq3.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/faq4.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/favicon.ico">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/fb.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/fdt.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/fish.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/fm.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/fnfrj.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/footer-top2.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/footer_00.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/fow %281%29.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/fow.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/ftsis %281%29.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/ftsis.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game-1.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/game-2.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game-3.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game-4.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/game1.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game3.jpg">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game4.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/games-5.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/games-lg1.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/game_team1-sbt.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game_team1-sport1.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game_team1-sport2.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game_team2-sbt.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/game_team2-sport1.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/game_team2-sport2.png">
+      <publishTime>12/29/2018 17:39:26</publishTime>
+    </File>
+    <File Include="Content/images/gaming_license.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/google.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/gos.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/gotoabout.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/gototop.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/gtsjzc.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/holidayseason.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/hot %281%29.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/hot.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-arrow.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-download.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-facebook.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-flame %281%29.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-flame.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-lady.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-mail.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-search.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-skype.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-star2.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-switch.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon-up.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon1.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon4 %281%29.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icon4.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/icons.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/ie8-panel/warning_bar_0000_us.jpg">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/ig.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/ilotto.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img1 %281%29.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img1.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img1.png">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img10.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img1b.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img2 %281%29.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img2.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img2b.jpg">
+      <publishTime>12/29/2018 17:39:27</publishTime>
+    </File>
+    <File Include="Content/images/img3.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img3b.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img4.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img4b.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img5.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img5b.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img6.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img7b.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img8b.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/img9.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-1.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-10a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-18a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-18b.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-1new.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-21a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-22a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-2a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-30a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-30ajpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-31a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-3a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-40a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-41a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-4a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-50a.jpg">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/index-51a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-5a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-60a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-61a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-6a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-7a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-8a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index-9a.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/index_icons.png">
+      <publishTime>12/29/2018 17:39:28</publishTime>
+    </File>
+    <File Include="Content/images/jademagician.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/jqw.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/keno.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/light.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/lights1.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/lights2.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/list-title.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/load.gif">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/loading.gif">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/logo1.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/logo2.png">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/logo4.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/logo5.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/logo6.jpg">
+      <publishTime>12/29/2018 17:39:29</publishTime>
+    </File>
+    <File Include="Content/images/logo7.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/lt_btn2.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/main_bg.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/match-bg.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mg-qr.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mg.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/minus2.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mobile-agin.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mobile-agqj.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mobile-mg.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mobile-pt.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mobile_agin2.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/mobile_bg.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2013_01.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2013_02.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2013_03.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2014_01.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2014_02.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2014_03.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2014_04.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2014_05.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2015_01.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2015_02.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2015_03.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2015_04.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2016_01.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2016_02.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2016_03.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2017_01.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2017_02.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2017_03.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2017_04.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2018_01.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2018_02.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/nam2018_03.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/next %281%29.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/next %282%29.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/next.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/next.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/ny_ad.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/pagcor-icon.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/payment.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/PAYOUT_CALC.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/pg.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/pga.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/phone_shadow.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/pimped.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/plus2.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/pop-btn.png">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/popup1.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/popup_icons.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/preloader.gif">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/prev %281%29.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/prev.jpg">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/prev.png">
+      <publishTime>12/29/2018 17:39:30</publishTime>
+    </File>
+    <File Include="Content/images/promo.png">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo1.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo13.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo14.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo16.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo17.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo18.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo19 %281%29.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo19.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo20.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo21.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo22.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo23.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo24.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo25.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo26.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo27.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo28.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo29.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo3.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo30.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo31.jpg">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/promo32.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo33.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo34.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo35.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo37.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo38.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo4.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo40.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo44.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo45.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo46.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo47.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo48.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo49.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo5.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo50.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo51.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo53.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo55.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo57.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo58.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo59.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo6.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo60.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo61.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo62.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo63.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo64.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo66.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo67.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo68.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo69.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo7.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo8.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/promo_icons.png">
+      <publishTime>12/29/2018 17:39:31</publishTime>
+    </File>
+    <File Include="Content/images/ps_icons2.png">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/pt-qr.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/pt.png">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/qr-icon.png">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/qrside.jpg">
+      <publishTime>12/29/2018 17:39:32</publishTime>
+    </File>
+    <File Include="Content/images/ReelsOfWealth.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/ring.png">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/ring2.png">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/RookRevenge.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/rotate.png">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/RouletteWheel.svg">
+      <publishTime>12/28/2018 16:09:34</publishTime>
+    </File>
+    <File Include="Content/images/RouletteWheel22.svg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/sbk-g1s.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/sbk-g2s.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/sbk-g3s.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-9fc.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-af.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-at.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-bt.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-cgw.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-cj.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-cst.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-dg.jpg">
+      <publishTime>12/29/2018 17:39:33</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-dof.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-ea.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-eta.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-fai.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-fh.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-fof.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-fs.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-gos.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-hv.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-jc.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-laf.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-ls.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-nc.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-pok.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-pph.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-rc.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-rf.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-rw.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-s.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-sb.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-sbabes.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-sp.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-spath.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-sr.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-ss.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-ssamba.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-sss.jpg">
+      <publishTime>12/29/2018 17:39:34</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-sth.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-stw.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-swh.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-tc.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-toj.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-up.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-vg.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-wl.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-wm.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-wom.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-wws.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-yol.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/screenshot-yotm.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/set2.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/set3.png">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-1new.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-2new.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-3new.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-CA.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-casino.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-CO.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-FLA.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-GA.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-IL.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-NY.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-TX.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/sidebar-WY.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/SinCity.jpg">
+      <publishTime>12/29/2018 17:39:35</publishTime>
+    </File>
+    <File Include="Content/images/slider-1.jpg">
+      <publishTime>12/28/2018 16:09:36</publishTime>
+    </File>
+    <File Include="Content/images/slider-1a.jpg">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/slider-2.jpg">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/slider-21a.jpg">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/slider-2a.jpg">
+      <publishTime>12/28/2018 16:09:36</publishTime>
+    </File>
+    <File Include="Content/images/slider-3a.jpg">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/slider-4a.jpg">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/slider-5a.jpg">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/slider-6a.jpg">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/slider-9.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/images/slider_12a.jpg">
+      <publishTime>12/28/2018 16:09:36</publishTime>
+    </File>
+    <File Include="Content/images/Slotgame.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/span-txt.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/sponsors.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/sprites.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/ss1-01h.jpg">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/step1.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/step2.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/step3.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/step4.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/step5.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/superflip.png">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/table1.jpg">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/table2.jpg">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/table3.jpg">
+      <publishTime>12/29/2018 17:39:36</publishTime>
+    </File>
+    <File Include="Content/images/tag2.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/tag3.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/tag4.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/tdlogoweb.png">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/images/td_6a.jpg">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/td_index-1new.jpg">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/td_slider-9.jpg">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/thumbup.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/title1.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/title2.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/title3.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/title4.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/title5.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/title6.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/top.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/trans-d.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/trans1 %281%29.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/trans1.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/trans2.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/trans3.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/trans5.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/transbg.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/twitter.jpg">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/vikingrunecraft.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/wildnorth.png">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/youtube.jpg">
+      <publishTime>12/29/2018 17:39:37</publishTime>
+    </File>
+    <File Include="Content/images/_blank.png">
+      <publishTime>12/29/2018 17:39:04</publishTime>
+    </File>
+    <File Include="Content/mobilecss/introjs.css">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/mobilecss/layer.css">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/mobilecss/main.css">
+      <publishTime>12/28/2018 16:09:38</publishTime>
+    </File>
+    <File Include="Content/mobilecss/swiper.min.css">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/.DS_Store">
+      <publishTime>12/29/2018 17:39:38</publishTime>
+    </File>
+    <File Include="Content/mobileimages/1star.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/2star.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/3star.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/4star.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/5star.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/6star.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/about_img_certificate_big.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/ag_new.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/aogro.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/banner-index-044ca66baef2d33d8f6a346f086c776b1.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/banner-index-1e9503eae46b387b5f400c67f57ee2535.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/banner-index-299833405942db56559a4d08d71468440.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/banner-index-3138472e0864497be4eb49bdff5bfd40f.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/bg.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/bg1.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/btn-bg.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/btn.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/ebet.jpg">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/furf.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/.DS_Store">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanero12zodiacs.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanero5mariachis.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroallforone.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroamericanbaccarat.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroamericanbaccaratzerocommission.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroamericanblackjack.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroarcaneelements.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroarcticwonders.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroaztlansgold.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerobarnstormerbucks.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerobikiniisland.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerobirdofthunder.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroblackbeardsbounty.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroblackjack3hand.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroblackjackdoubleexposure3hand.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerobombsaway.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerobuggybonus.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerocakevalley.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerocaribbeanholdem.jpg">
+      <publishTime>12/29/2018 17:39:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerocaribbeanstud.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerocashreef.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerocoyotecrash.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerodiscofunk.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerodoubleodollars.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerodragoncastle.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerodragonsrealm.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerodragonsthrone.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerodragontiger.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroegyptiandreams.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroegyptiandreamsdeluxe.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroeuropeanroulette.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerofacaishen.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerofenghuang.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerofirerooster.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroflyinghigh.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerofortunedogs.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerofourdivinebeasts.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerogalacticcash.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerogangsters.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerogoldenunicorn.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerogoldrush.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerojugglenaut.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerokingtutstomb.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerokoigate.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerolondonhunter.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerom88football.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneromonstermashcash.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneromrbling.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneromummymoney.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneromysticfortune.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerooceanscall.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneropamperme.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneropandapanda.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneropiratesplunder.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneropoolshark.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneropresto.jpg">
+      <publishTime>12/29/2018 17:39:41</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroqueenofqueens.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroqueenofqueensii.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerorodeodrive.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerorollingroger.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroromanempire.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroruffledup.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerosantasvillage.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroscruffyscallywags.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habaneroshogunsland.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerosicbo.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerosirblingalot.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerosos.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerosparta.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerosuperstrike.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerosupertwister.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerothebigdeal.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerothedeadescape.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerothreecardpoker.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerotreasuretomb.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerovikingsplunder.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerowar.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerowaysoffortune.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerozeus.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/habanerozeus2.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbet3hitpay.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetabsolutesuperreels.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetaliceadventure.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetambiance.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetastromagic.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetbeetlejewels.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetbestthingsinlife.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetbewitched.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetbooster.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetcashcamel.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetcherrytrio.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetcloudtales.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetdiamondwild.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetdiamondwildnonprogressive.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetdiscodouble.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetdolphinsisland.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbeteyeoftheamulet.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetforestmania.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbethappybirds.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbethotshots.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetillusions2.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetjokerstacks.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetlegendofloki.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetlucky3.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetluckyclover.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetluxuryrome.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetmegaboy.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetmillioncentshd.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetmillioncoinsrespin.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetmonalisajewels.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetmonalisajewelsprogressive.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetmusketeerslot.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetmysteryoflongwei.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetneonreels.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetneonreelsprogressive.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetninjachef.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetreddragonwild.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetrobosmash.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetroyalcash.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetscrollsofrahd.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetshaolinspin.jpg">
+      <publishTime>12/29/2018 17:39:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetskullsoflegend.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetslammin7s.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetspinorreelshd.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetspookyfamily.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetstacksogold.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetsuperfasthothot.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetsuperfasthothotprogressive.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetsuperluckyreels.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetsupermultitimesprogressivehd.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbettheking.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbettreeoffortunes.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetultimatesuperreels.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/isoftbetwisps.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgs108heroes.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsacesandfaces.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsadeliathefortunewielder.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsadventurepalace.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsagentjaneblonde.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsagentvalkyrie.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsageofdiscovery.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsalaskanfishing.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsamazingaztecs.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsatlanticcityblackjackgold.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsbadmintonhero.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsbasketballstar.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsbeautifulbones.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsbigkahuna.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsbikiniparty.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsbreakaway.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsbreakdabankagain.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsburningdesire.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscarnaval.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscashapillar.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscashoccino.jpg">
+      <publishTime>12/29/2018 17:39:43</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscentrecourt.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsclassicblackjackgold.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscoolbuck5reel.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscoolwolf.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscouchpotato.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscrazychameleons.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgscricketstar.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdecodiamonds.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdeuceswild.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdiamondempire.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdolphinquest.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdoubledoublebonus.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdragondance.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdragonz.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsdreamdate.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgseagleswings.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsemoticoins.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsemperorofthesea.jpg">
+      <publishTime>12/29/2018 17:39:44</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgseuropeanroulettegoldmg.jpg">
+      <publishTime>12/29/2018 17:39:45</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsexoticcats.jpg">
+      <publishTime>12/29/2018 17:39:45</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsfirenfortune.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsfishparty.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsfootballstar.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsforbiddenthrone.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsfortunegirl.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsfortunium.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsfruitblast.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsfruitvscandy.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgameofthrones243ways.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgirlswithgunsjungleheat.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgnomewood.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgoldenera.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgoldenprincess.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgoldfactory.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgoldwynsfairies.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsgophergold.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgshalloween.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgshellboy.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgshighlander.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgshighsociety.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgshollyjollypenguins.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgshuangditheyellowemperor.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsimmortalromance.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsjacksorbetter.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsjewelquestriches.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsjunglejimeldorado.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsjurassicworld.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgskaraokeparty.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgskingsofcash.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgskingtusk.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsladiesnite.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgslifeofriches.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsluckykoi.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsluckyleprechaun.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsluckylinks.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsluckylittlegods.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsluckytwins.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsluckyzodiac.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsmegamoneymultiplier.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsmermaidsmillions.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsmobydick.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsmonsterwheels.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgspeekaboo.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgspistoleras.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsplayboy.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsplayboygold.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgspollenparty.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgspureplatinum.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsrainbrew.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsreelgems.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsreelspinner.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsretroreels.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsretroreelsdiamondglitz.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsretroreelsextremeheat.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsrobinofsherwood.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsrugbystar.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssamuraiken.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssantapaws.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssantaswildride.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsscrooge.jpg">
+      <publishTime>12/29/2018 17:39:47</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssecretadmirer.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssecretromance.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssilverlioness4x.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssixacrobats.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssomanymonsters.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssomuchcandy.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsspringbreak.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsstardust.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsstarlightkiss.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssterlingsilver.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssugarparade.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssunquest.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgssuntide.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgstarzan.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgstastystreet.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgstemperance.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgstempleoftut.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsthealchemistsgold.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsthefinerreelsoflife.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgstheheatison.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsthephantomoftheopera.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsthetwistedcircus.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsthunderstruck.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsthunderstruckii.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgstitansofthesuntheia.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgstombraider.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsvampirethemasqueradelasvegas.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgsvinylcountdown.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgswackypanda.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgswildorient.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/mgswildscarabs.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechadventuresinwonderland.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechageofthegods.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechageofthegodsgoddessofwisdom.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechageofthegodsgodofstorms.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechageofthegodsroulette.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechamazonwild.jpg">
+      <publishTime>12/29/2018 17:39:48</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechanightout.jpg">
+      <publishTime>12/29/2018 17:39:53</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtecharcher.jpg">
+      <publishTime>12/29/2018 17:39:53</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtecharctictreasure.jpg">
+      <publishTime>12/29/2018 17:39:53</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechbaccarat.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechbaishi.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechbermudatriangle.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechblackjackmultihand5.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechbonusbears.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechbountyofthebeanstalk.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechbuffaloblitz.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechcaptainstreasure.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechcasinoholdem.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechcatqueen.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechcherrylove.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechchinesekitchen.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechcopsnbandits.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechcowboysaliens.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechcrazy7.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechdeserttreasure.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechdolphinreef.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechdragonjackpotroulette.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechdragonkingdom.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechdrlovemore.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtecheastersurprise.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechesmeralda.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtecheverybodysjackpot.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfeilongzaitian.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfengkuangmajiang.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfivetigergenerals.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfootballcarnival.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfootballrules.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechforestofwonder.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfortunatefive.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfortuneday.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfortunelions.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfortunesofthefox.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfrankiedettorismagicsevenjackpot.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfunkyfruitsjackpotgame.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfunkymonkey.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfunkymonkeyjackpot.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechfuriousfour.jpg">
+      <publishTime>12/29/2018 17:39:54</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgeishastory.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgemqueen.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgladiatorjackpot.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgoldentour.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgoldrally.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgreatblue.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgreatbluejackpot.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechgreatestodyssey.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechhalloweenfortune.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechhalloweenfortuneii.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechhauntedhouse.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechheartofthefrontier.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechheartofthejungle.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechheavenlyruler.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechhighwaykings.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechhotgems.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechicecave.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechincajackpot.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechirishluck.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechjackpotgiant.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechjinqianwa.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechkingofolympus.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechkongtheeighthwonderoftheworld.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechlegacyofthewild.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechlieyanzuanshi.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechliufushou.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechlonglonglong.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechlottomadness.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechmarilynmonroe.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechmrcashback.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechneptuneskingdom.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechniannianyouyu.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechpanthermoon.jpg">
+      <publishTime>12/29/2018 17:39:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechperfectblackjackmultihand5.jpg">
+      <publishTime>12/29/2018 17:40:00</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechpharaohssecrets.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechpiggiesandthewolf.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechpremiumeuropeanroulette.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechprinceofolympus.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechqueenofwands.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechririjincai.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechririshengcai.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechrocky.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechromeandglory.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsafariheat.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsantasurprise.jpg">
+      <publishTime>12/29/2018 17:39:56</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsecretsoftheamazon.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsinbadsgoldenvoyage.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsixiang.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechstreakofluck.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsunwukong.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsuperlion.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechsweetparty.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechthaiparadise.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechthaitemple.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechthediscovery.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechtheglassslipper.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechthegreatmingempire.jpg">
+      <publishTime>12/29/2018 17:39:57</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechtherichesofdonquixote.jpg">
+      <publishTime>12/29/2018 17:39:59</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechtimeforadeal.jpg">
+      <publishTime>12/29/2018 17:39:59</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechtriplemonkey.jpg">
+      <publishTime>12/29/2018 17:39:59</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechvacationstation.jpg">
+      <publishTime>12/29/2018 17:39:59</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechvacationstationdeluxe.jpg">
+      <publishTime>12/29/2018 17:39:59</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechwhiteking.jpg">
+      <publishTime>12/29/2018 17:40:00</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechwildgambler.jpg">
+      <publishTime>12/29/2018 17:40:00</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechwildgambler2arcticadventure.jpg">
+      <publishTime>12/29/2018 17:40:00</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechwulong.jpg">
+      <publishTime>12/29/2018 17:40:00</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechwulucaishen.jpg">
+      <publishTime>12/29/2018 17:40:00</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechzhaocaijinbao.jpg">
+      <publishTime>12/29/2018 17:40:02</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechzhaocaijinbaojackpot.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/playtechzhaocaitongzi.jpg">
+      <publishTime>12/29/2018 17:40:02</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic3geniewishes.jpg">
+      <publishTime>12/29/2018 17:40:02</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic3kingdomsbattleofredcliffs.jpg">
+      <publishTime>12/29/2018 17:40:02</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic5lions.jpg">
+      <publishTime>12/29/2018 17:40:02</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic7monkey.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic7piggies.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic7piggies25000.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic888dragons.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic888gold.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatic8dragons.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticaladdinstreasure.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticamericanblackjack.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticancientegypt.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticasgard.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticaztecgems.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticbusybees.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticcaishensgold.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticchilliheat.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticcrazy7s.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticdavincistreasure.jpg">
+      <publishTime>12/29/2018 17:40:03</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticdevils13.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticdiamondstrike.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticdiamondstrike250000.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticdragonkingdom.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticdwarvengold.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticdwarvengolddeluxe.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticfairytalefortune.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticfire88.jpg">
+      <publishTime>12/29/2018 17:40:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticfruityblast.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticgoldrush.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticgoldrush500000.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticgoldtrain.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticgreatreef.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticgreatrhino.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticherculessonofzeus.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatichockeyleague.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatichotsafari.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatichotsafari75000.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticirishcharms.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticjadebutterfly.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticjokersjewels.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticjourneytothewest.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticjurassicgiants.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticktv.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticladygodiva.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticladyofthemoon.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticleprechaunsong.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticluckydragons.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticluckynewyear.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticmadamedestiny.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticmasterchensfortune.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticmightykong.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticmoneyroll.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticmonkeymadness.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticmultihandblackjack.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticpandafortune.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticpandagold50000.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticpantherqueen.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticpekingluck.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticpixiewings.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticqueenofatlantis.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticqueenofgold.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticqueenofgold100000.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticromeoandjuliet.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticroulette.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticsanta.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticspookyfortune.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticsugarrushsummertime.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatictalesofegypt.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticthecatfather.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticthechampions.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmatictripletigers.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticvegasnights.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticwildspells.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticwolfgold.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/games/pragmaticwolfgold1000000.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/gaming.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/hdst.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/home.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/hrcls.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon08.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon1.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon11.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon111.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon2.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon21.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon3.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon31.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon4.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon41.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon42.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon5.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon6.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon7.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon8.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon88.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon9.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon_crown.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon_gift.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon_line.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon_menu01.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon_promotion.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/icon_register.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/img1.png">
+      <publishTime>12/28/2018 16:09:40</publishTime>
+    </File>
+    <File Include="Content/mobileimages/laptop.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/logo4.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/logout.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider-21a.jpg">
+      <publishTime>04/17/2019 06:55:34</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider-2a.jpg">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider-6a.jpg">
+      <publishTime>04/17/2019 06:55:55</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider-9.jpg">
+      <publishTime>04/17/2019 06:56:13</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider2-1.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider2-2.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider2-3.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slider_12a.jpg">
+      <publishTime>04/17/2019 06:55:09</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/.DS_Store">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/21a.jpg">
+      <publishTime>12/29/2018 17:40:10</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/41a.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/60a.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/61a.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/7a.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/8a.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/index-30a.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-9fc.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-af.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-cj.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-ea.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-fof.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-fs.jpg">
+      <publishTime>12/29/2018 17:40:12</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-rw.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-sp.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/slotgames/screenshot-wws.jpg">
+      <publishTime>12/29/2018 17:40:11</publishTime>
+    </File>
+    <File Include="Content/mobileimages/tdlogo.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/tdlogoweb.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/tdmenu.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/thao1.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/mobileimages/thao2.png">
+      <publishTime>12/28/2018 16:09:42</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/29/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Content/yamm3/.bowerrc">
+      <publishTime>12/28/2018 16:10:12</publishTime>
+    </File>
+    <File Include="Content/yamm3/.gitignore">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/bower.json">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/composer.json">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/gulpfile.js">
+      <publishTime>01/17/2019 20:36:58</publishTime>
+    </File>
+    <File Include="Content/yamm3/index.html">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/LICENSE.txt">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/package.json">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/README.md">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/yamm/yamm.css">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/yamm/yamm.less">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/yamm/yamm.styl">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Content/yamm3/yamm/_yamm.scss">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>12/28/2018 16:09:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/12/2018 18:33:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/12/2018 18:33:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/12/2018 18:33:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/12/2018 18:33:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/28/2018 16:09:02</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/28/2018 17:22:42</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>10/01/2019 23:34:13</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.19-build00125.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.19-build00125.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-datetimepicker.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-datetimepicker.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/docs/media/js/doc.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/docs/media/js/jquery.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/docs/media/js/shBrushJScript.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/docs/media/js/shCore.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/AutoFill/media/docs/media/js/doc.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/AutoFill/media/docs/media/js/jquery.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/AutoFill/media/docs/media/js/shBrushJScript.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/AutoFill/media/docs/media/js/shCore.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/AutoFill/media/js/AutoFill.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/AutoFill/media/js/AutoFill.min.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/AutoFill/media/js/AutoFill.min.js.gz">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColReorder/media/docs/media/js/doc.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColReorder/media/docs/media/js/jquery.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColReorder/media/docs/media/js/shBrushJScript.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColReorder/media/docs/media/js/shCore.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColReorder/media/js/ColReorder.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColReorder/media/js/ColReorder.min.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColReorder/media/js/ColReorder.min.js.gz">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColVis/media/docs/media/js/doc.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColVis/media/docs/media/js/jquery.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColVis/media/docs/media/js/shBrushJScript.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColVis/media/docs/media/js/shCore.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColVis/media/js/ColVis.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColVis/media/js/ColVis.min.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/ColVis/media/js/ColVis.min.js.gz">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/CurrencySorter/CurrencySort.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/FixedColumns/docs/media/js/doc.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/FixedColumns/docs/media/js/jquery.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/FixedColumns/docs/media/js/shBrushJScript.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/FixedColumns/docs/media/js/shCore.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.min.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.min.js.gz">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/Scroller/media/docs/media/js/doc.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/Scroller/media/docs/media/js/jquery.js">
+      <publishTime>12/28/2018 16:10:16</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/Scroller/media/docs/media/js/shBrushJScript.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/Scroller/media/docs/media/js/shCore.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/Scroller/media/js/dataTables.scroller.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/Scroller/media/js/dataTables.scroller.min.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/Scroller/media/js/dataTables.scroller.min.js.gz">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/TableTools/media/js/TableTools.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/TableTools/media/js/TableTools.min.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/TableTools/media/js/TableTools.min.js.gz">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/extras/TableTools/media/js/ZeroClipboard.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/media/js/jquery.dataTables.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/media/js/jquery.dataTables.min.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/DataTables-1.9.4/media/js/jquery.js">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/css/dataTables.bootstrap.css">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/css/datatables.css">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/images/sort_asc.png">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/images/sort_asc_disabled.png">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/images/sort_both.png">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/images/sort_desc.png">
+      <publishTime>12/28/2018 16:10:22</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/images/sort_desc_disabled.png">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/images/Thumbs.db">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/js/dataTables.bootstrap.js">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/datatables-bs3/js/datatables.js">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js">
+      <publishTime>12/28/2018 16:10:28</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js.map">
+      <publishTime>12/28/2018 16:10:28</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js">
+      <publishTime>12/28/2018 16:10:28</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js.map">
+      <publishTime>12/28/2018 16:10:28</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js.map">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js.map">
+      <publishTime>12/28/2018 16:10:26</publishTime>
+    </File>
+    <File Include="Scripts/featherlight/featherlight.css">
+      <publishTime>12/28/2018 16:10:28</publishTime>
+    </File>
+    <File Include="Scripts/featherlight/featherlight.js">
+      <publishTime>12/28/2018 16:10:28</publishTime>
+    </File>
+    <File Include="Scripts/index.d.ts">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/index.js">
+      <publishTime>04/19/2019 08:11:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>12/28/2018 16:17:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>12/28/2018 16:17:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>12/28/2018 16:17:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>12/29/2018 17:40:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>12/29/2018 17:40:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>12/29/2018 17:40:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>12/29/2018 17:40:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>12/29/2018 17:40:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>12/29/2018 17:40:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery.cycle2.carousel.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.cycle2.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>01/17/2019 20:36:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/js/Account.js">
+      <publishTime>02/22/2019 05:36:33</publishTime>
+    </File>
+    <File Include="Scripts/js/accountmanagement.js">
+      <publishTime>04/16/2019 07:43:01</publishTime>
+    </File>
+    <File Include="Scripts/js/bootstrap-datetimepicker.min.js">
+      <publishTime>02/22/2019 05:36:32</publishTime>
+    </File>
+    <File Include="Scripts/js/bootstrap.min.js">
+      <publishTime>02/22/2019 05:36:32</publishTime>
+    </File>
+    <File Include="Scripts/js/cart.js">
+      <publishTime>02/22/2019 05:36:46</publishTime>
+    </File>
+    <File Include="Scripts/js/Casino.js">
+      <publishTime>02/22/2019 06:09:25</publishTime>
+    </File>
+    <File Include="Scripts/js/core.min.js">
+      <publishTime>02/22/2019 05:36:42</publishTime>
+    </File>
+    <File Include="Scripts/js/forgot-password.js">
+      <publishTime>02/22/2019 05:36:46</publishTime>
+    </File>
+    <File Include="Scripts/js/Games.js">
+      <publishTime>02/22/2019 05:36:59</publishTime>
+    </File>
+    <File Include="Scripts/js/globals.js">
+      <publishTime>04/16/2019 07:05:39</publishTime>
+    </File>
+    <File Include="Scripts/js/html5shiv.min.js">
+      <publishTime>02/22/2019 05:36:34</publishTime>
+    </File>
+    <File Include="Scripts/js/jstorage.js">
+      <publishTime>02/22/2019 05:36:34</publishTime>
+    </File>
+    <File Include="Scripts/js/login.js">
+      <publishTime>02/22/2019 05:36:19</publishTime>
+    </File>
+    <File Include="Scripts/js/lottery-keno.js">
+      <publishTime>02/22/2019 05:36:20</publishTime>
+    </File>
+    <File Include="Scripts/js/lottery-standard.js">
+      <publishTime>02/22/2019 06:09:39</publishTime>
+    </File>
+    <File Include="Scripts/js/Lottery.js">
+      <publishTime>02/22/2019 05:36:14</publishTime>
+    </File>
+    <File Include="Scripts/js/Lotto-BigBall.js">
+      <publishTime>02/22/2019 05:36:14</publishTime>
+    </File>
+    <File Include="Scripts/js/Lotto-Keno.js">
+      <publishTime>02/22/2019 06:09:50</publishTime>
+    </File>
+    <File Include="Scripts/js/Lotto-Standard.js">
+      <publishTime>02/22/2019 06:10:00</publishTime>
+    </File>
+    <File Include="Scripts/js/Lotto-Timer.js">
+      <publishTime>02/22/2019 05:36:07</publishTime>
+    </File>
+    <File Include="Scripts/js/paycalc.js">
+      <publishTime>02/22/2019 05:36:07</publishTime>
+    </File>
+    <File Include="Scripts/js/pointer-events.min.js">
+      <publishTime>02/22/2019 05:36:07</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/.gitmodules">
+      <publishTime>02/22/2019 05:36:37</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/.rvmrc">
+      <publishTime>02/22/2019 05:36:36</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/bower.json">
+      <publishTime>02/22/2019 05:36:36</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/config/jsdoc.conf.json">
+      <publishTime>02/22/2019 05:36:37</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/config/jslint.yml">
+      <publishTime>02/22/2019 05:36:37</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/abc.com/index.html">
+      <publishTime>02/22/2019 05:36:39</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/abc.com/js/porthole.js">
+      <publishTime>02/22/2019 05:36:47</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/abc.com/js/porthole.min.js">
+      <publishTime>02/22/2019 05:36:47</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/abc.com/proxy.html">
+      <publishTime>02/22/2019 05:36:39</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/demo.auberger.com/porthole/index.html">
+      <publishTime>02/22/2019 05:36:44</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/demo.auberger.com/porthole/proxy.html">
+      <publishTime>02/22/2019 05:36:44</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/sandbox.ternarylabs.com/porthole/index.html">
+      <publishTime>02/22/2019 05:36:59</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/sandbox.ternarylabs.com/porthole/js/porthole.js">
+      <publishTime>02/22/2019 05:36:49</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/sandbox.ternarylabs.com/porthole/js/porthole.min.js">
+      <publishTime>02/22/2019 05:36:48</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/sandbox.ternarylabs.com/porthole/proxy.html">
+      <publishTime>02/22/2019 05:37:06</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/xyz.com/index.html">
+      <publishTime>02/22/2019 05:36:50</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/example/xyz.com/proxy.html">
+      <publishTime>02/22/2019 05:36:50</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/Gemfile">
+      <publishTime>02/22/2019 05:36:36</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/Gemfile.lock">
+      <publishTime>02/22/2019 05:36:35</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/jsdoc/321b1cb2a3.html">
+      <publishTime>02/22/2019 05:37:06</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/jsdoc/68d8de1e8a.html">
+      <publishTime>02/22/2019 05:36:52</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/jsdoc/6db8242258.html">
+      <publishTime>02/22/2019 05:36:52</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/jsdoc/index.html">
+      <publishTime>02/22/2019 05:36:52</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/jsdoc/module-Porthole.html">
+      <publishTime>02/22/2019 05:36:52</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/jsdoc/styles/jsdoc-default.css">
+      <publishTime>02/22/2019 05:36:59</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/jsdoc/styles/node-dark.css">
+      <publishTime>02/22/2019 05:36:53</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/LICENSE">
+      <publishTime>02/22/2019 05:36:35</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/Lobby.js">
+      <publishTime>02/22/2019 05:36:35</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/Rakefile">
+      <publishTime>02/22/2019 05:36:34</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/README.md">
+      <publishTime>02/22/2019 05:36:34</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/spec/javascripts/helpers/SpecHelper.js">
+      <publishTime>02/22/2019 05:36:58</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/spec/javascripts/support/jasmine.yml">
+      <publishTime>02/22/2019 05:37:06</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/spec/javascripts/support/jasmine_runner.rb">
+      <publishTime>02/22/2019 05:37:00</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/spec/javascripts/WindowProxyDispatcherSpec.js">
+      <publishTime>02/22/2019 05:36:56</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/spec/javascripts/WindowProxyHTML5Spec.js">
+      <publishTime>02/22/2019 05:36:56</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/spec/javascripts/WindowProxyLegacySpec.js">
+      <publishTime>02/22/2019 05:36:56</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/spec/javascripts/WindowProxySpec.js">
+      <publishTime>02/22/2019 05:36:56</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/src/porthole.js">
+      <publishTime>02/22/2019 05:37:02</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/src/porthole.min.js">
+      <publishTime>02/22/2019 05:37:02</publishTime>
+    </File>
+    <File Include="Scripts/js/porthole/src/proxy.html">
+      <publishTime>02/22/2019 05:37:01</publishTime>
+    </File>
+    <File Include="Scripts/js/reset-password.js">
+      <publishTime>02/22/2019 05:36:08</publishTime>
+    </File>
+    <File Include="Scripts/js/ResetPassword.js">
+      <publishTime>02/22/2019 05:36:08</publishTime>
+    </File>
+    <File Include="Scripts/js/ResizeSensor.js">
+      <publishTime>02/22/2019 05:36:09</publishTime>
+    </File>
+    <File Include="Scripts/js/Results.js">
+      <publishTime>02/22/2019 05:36:09</publishTime>
+    </File>
+    <File Include="Scripts/js/script.js">
+      <publishTime>02/22/2019 06:10:06</publishTime>
+    </File>
+    <File Include="Scripts/js/select2.js">
+      <publishTime>02/22/2019 05:36:11</publishTime>
+    </File>
+    <File Include="Scripts/js/select2.min.js">
+      <publishTime>02/22/2019 05:36:10</publishTime>
+    </File>
+    <File Include="Scripts/js/siteImage.js">
+      <publishTime>02/22/2019 05:36:10</publishTime>
+    </File>
+    <File Include="Scripts/js/validator.js">
+      <publishTime>02/22/2019 05:36:11</publishTime>
+    </File>
+    <File Include="Scripts/js/wallet.js">
+      <publishTime>04/19/2019 07:33:10</publishTime>
+    </File>
+    <File Include="Scripts/js/winnings.js">
+      <publishTime>02/22/2019 05:36:12</publishTime>
+    </File>
+    <File Include="Scripts/mobilejs/app.js">
+      <publishTime>01/15/2019 20:36:28</publishTime>
+    </File>
+    <File Include="Scripts/mobilejs/external-lib.js">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/mobilejs/global.js">
+      <publishTime>01/08/2019 19:59:54</publishTime>
+    </File>
+    <File Include="Scripts/mobilejs/integration.js.php">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/mobilejs/layer.js">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/mobilejs/zepto.min.js">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js.map">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/README.md">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>12/28/2018 16:10:14</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js.map">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js.map">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.map">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js.map">
+      <publishTime>12/28/2018 16:10:42</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>01/22/2019 16:46:18</publishTime>
+    </File>
+    <File Include="Views/Account/Account.mobile.cshtml">
+      <publishTime>10/02/2018 16:54:14</publishTime>
+    </File>
+    <File Include="Views/Account/AccountManagement.cshtml">
+      <publishTime>04/19/2019 05:55:48</publishTime>
+    </File>
+    <File Include="Views/Account/AccountManagement.mobile.cshtml">
+      <publishTime>04/19/2019 06:36:16</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>06/14/2018 17:43:32</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>01/10/2019 15:22:54</publishTime>
+    </File>
+    <File Include="Views/Account/Login.mobile.cshtml">
+      <publishTime>10/03/2018 20:26:20</publishTime>
+    </File>
+    <File Include="Views/Account/PasswordReset.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Games/Casino.cshtml">
+      <publishTime>02/28/2019 04:59:12</publishTime>
+    </File>
+    <File Include="Views/Games/Casino.mobile.cshtml">
+      <publishTime>04/18/2019 06:32:49</publishTime>
+    </File>
+    <File Include="Views/Games/Keno.cshtml">
+      <publishTime>06/12/2018 17:15:56</publishTime>
+    </File>
+    <File Include="Views/Games/KenoWinningNumbers.cshtml">
+      <publishTime>06/12/2018 17:15:56</publishTime>
+    </File>
+    <File Include="Views/Games/Lotto.cshtml">
+      <publishTime>02/28/2019 04:32:27</publishTime>
+    </File>
+    <File Include="Views/Games/Lotto.mobile.cshtml">
+      <publishTime>04/18/2019 06:37:08</publishTime>
+    </File>
+    <File Include="Views/Games/LottoWinningNumbers.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Games/WinningNumbers.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Home/Cardgame.cshtml">
+      <publishTime>10/01/2018 19:09:10</publishTime>
+    </File>
+    <File Include="Views/Home/Cardgame.mobile.cshtml">
+      <publishTime>10/01/2018 19:09:16</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>04/18/2019 05:25:32</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/28/2019 05:22:48</publishTime>
+    </File>
+    <File Include="Views/Home/Index.mobile.cshtml">
+      <publishTime>04/18/2019 05:13:54</publishTime>
+    </File>
+    <File Include="Views/Home/Lobby.cshtml">
+      <publishTime>01/20/2019 21:26:44</publishTime>
+    </File>
+    <File Include="Views/Home/Slotgame.cshtml">
+      <publishTime>10/01/2018 19:08:44</publishTime>
+    </File>
+    <File Include="Views/Home/Slotgame.mobile.cshtml">
+      <publishTime>10/01/2018 19:08:36</publishTime>
+    </File>
+    <File Include="Views/Home/Transaction.mobile.cshtml">
+      <publishTime>10/01/2018 19:08:48</publishTime>
+    </File>
+    <File Include="Views/Kiosk/Casino.cshtml">
+      <publishTime>06/14/2018 18:03:44</publishTime>
+    </File>
+    <File Include="Views/Kiosk/Index.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Kiosk/Login.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Kiosk/Lotto.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Kiosk/WinningNumbers.cshtml">
+      <publishTime>06/14/2018 17:43:30</publishTime>
+    </File>
+    <File Include="Views/Kiosk/_LayoutLobby.cshtml">
+      <publishTime>01/13/2019 15:19:50</publishTime>
+    </File>
+    <File Include="Views/Shared/banner.cshtml">
+      <publishTime>03/01/2019 05:40:51</publishTime>
+    </File>
+    <File Include="Views/Shared/banner.mobile.cshtml">
+      <publishTime>04/17/2019 06:56:56</publishTime>
+    </File>
+    <File Include="Views/Shared/menu.cshtml">
+      <publishTime>01/17/2019 20:32:32</publishTime>
+    </File>
+    <File Include="Views/Shared/_KioskLayout.cshtml">
+      <publishTime>06/12/2018 17:15:08</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/19/2019 08:10:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.mobile.cshtml">
+      <publishTime>04/19/2019 08:11:11</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutLobby.cshtml">
+      <publishTime>01/13/2019 18:11:46</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutOld.cshtml">
+      <publishTime>10/04/2018 17:47:12</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/12/2018 16:11:34</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/12/2018 16:11:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/06/2021 17:17:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

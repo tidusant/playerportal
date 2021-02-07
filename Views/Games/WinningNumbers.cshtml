@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Winning Numbers";
+}
+
+<!-- Page Content-->
+<main class="page-content">
+    @Html.Hidden("Login", @Url.Action("login", "Account"))
+    @Html.Hidden("lobby", @Url.Action("lobby", "home"))
+    @Html.Hidden("APIURL", @System.Configuration.ConfigurationManager.AppSettings["APIUrl"])
+    <section>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="~/">home</a></li>
+                <li class="active">winning numbers</li>
+            </ol>
+        </div>
+    </section>
+    <section class="section-bottom-30">
+        <div class="container">
+            <h4>Take a look at the latest winning numbers</h4>
+            <div class="row">
+                <div class="col-xs-12">
+                    <dl class="terms-list wrap border-primary">
+                        <div>
+                            <select id="drawings"></select>
+                        </div>
+                        <div class="game-result-container" id="game-result-container">
+                            <div class="row">
+                                <div class="col-lg-12" data-loading="slow" id="winning-numbers">
+                                    <div class="loading">
+                                        Loading<span class="spinning-text">&hellip;</span>
+                                    </div>
+                                    <table class="winning-numbers-table game-results-table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Lottery</th>
+                                                <th>Last Draw</th>
+                                                <th>Result</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="game-results-table-body"></tbody>
+                                    </table>
+                                    <template id="game-results-row-template">
+                                        <tr>
+                                            <td><img class="gameImg" /></td>
+                                            <td class="game-name"></td>
+                                            <td class="last-drawing"></td>
+                                            <td>
+                                                <div class="game-results-row-rtable">
+                                                    <div>
+                                                        <ul class="game-results-row-numbers-list"></ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="game-results-row-extranumbers-list"></ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                    </template>
+                                    <template id="result-content-template">
+                                        <div class="row LottoGameResult">
+                                            <div class="col-lg-2"><img class="gameImg" /></div>
+                                            <div class="col-lg-3 text game-name"></div>
+                                            <div class="col-lg-2 text last-drawing"></div>
+                                            <div class="col-lg-3 last-drawing">
+                                                <div class="game-results-row-rtable">
+                                                    <div>
+                                                        <ul class="game-results-row-numbers-list"></ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="game-results-row-extranumbers-list"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 text-right">
+
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        </dd>
+                    </dl><a href="~/games/lotto" class="btn btn-primary btn-sm btn-no-arrow">play lotto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+@section AdditionalFooterScripts
+{
+    <script>
+        var gameID = "";
+        var gameType = null;
+    </script>
+    <script src="~/Scripts/js/winnings.js"></script>
+}

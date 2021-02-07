@@ -1,0 +1,329 @@
+/* Custom styles bandaid */
+
+.login, .logout {
+    display: none;
+}
+
+#lotto-container {
+    width: 100%;
+}
+
+/* Keno */
+
+#keno-container {
+    width: 100%;
+}
+
+#play-keno .pick-game {
+    font-size: 1em;
+    font-weight: normal;
+    color: #f00;
+}
+
+    #play-keno .pick-game select {
+        color: #fff;
+        background-color: #000;
+        border: 0;
+        font-weight: bold;
+    }
+
+#drawings {
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#play-keno .hidden-lg .btn:after {
+    content: '';
+    width: 50px;
+}
+
+/* checkout */
+
+.checkout-place-order-div {
+    text-align: right;
+}
+
+.cart-table th {
+    font-family: "Montserrat", sans-serif;
+    border: none 0px !important;
+    background-color: #e23d16;
+    color: #000;
+}
+
+.cart-table tbody tr.checkout-line {
+    border: none 0;
+    border-bottom: solid 1px #e23d16;
+}
+
+/* winning #s */
+
+.winning-numbers-table {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+    .winning-numbers-table thead tr th {
+        border: none 0px !important;
+        background-color: #e23d16;
+        color: #000;
+        padding: 0.75em !important;
+    }
+
+    .winning-numbers-table tbody {
+    }
+
+        .winning-numbers-table tbody tr {
+        }
+
+        .winning-numbers-table tbody td {
+            text-align: left;
+            padding: 0.75em 0.25em;
+        }
+
+        .winning-numbers-table tbody tr:nth-child(even) {
+            background-color: rgba(0,0,0,0.25);
+        }
+
+    .winning-numbers-table .game-results-row-rtable ul {
+        display: inline;
+    }
+
+        .winning-numbers-table .game-results-row-rtable ul li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+#winning-numbers {
+    min-height: 400px;
+}
+
+    /* Loading Helpers */
+
+    #winning-numbers div.loading {
+        font-family: "Montserrat",sans-serif;
+        font-size: 100px;
+        text-align: center;
+        color: #fff;
+        display: block;
+        height: 3em;
+        line-height: 3em;
+    }
+
+body {
+    /*perspective: 500px;*/
+}
+
+/*
+.spinning-text {
+	display: inline-block;
+  text-align: center;
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@keyframes depth {
+  0% { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}
+*/
+#accountFrame {
+    width: 100%;
+    border: 1px solid red;
+    overflow: auto;
+}
+
+/* Yamm Nav Bar*/
+.rd-navbar-brand {
+    padding: 30px 0;
+    float: left;
+}
+
+.navbar-default {
+    background-color: #2b2b2b;
+    border: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+    .navbar-default .icon-bar {
+        background-color: #fff;
+        height: 3px;
+        border-radius: 20px;
+    }
+
+    .navbar-default .navbar-header-social-media {
+        display: none;
+    }
+
+    .navbar-default .navbar-social-media {
+        display: block;
+        float:right;
+    }
+
+    .navbar-default a {
+        color: #fff;
+        font-weight: 500;
+        line-height: 26px;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        text-transform: uppercase;
+        height: 60px;
+        -webkit-transition: border-bottom .3s ease;
+        -moz-transition: border-bottom .3s ease;
+        -o-transition: border-bottom .3s ease;
+        transition: border-bottom .3s ease;
+        border-bottom: 3px solid transparent;
+    }
+
+    .navbar-default .dropdown a:hover {
+        background-color: #2b2b2b;
+        color: #3ec0e1;
+        text-decoration: none;
+        border-bottom: 3px solid #3ec0e1;
+    }
+
+    .navbar-default open a {
+        background-color: #2b2b2b;
+        color: #3ec0e1;
+        text-decoration: none;
+    }
+
+    .navbar-default .dropdown-menu {
+        background-color: #2b2b2b;
+    }
+
+.open > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.navbar-default .dropdown-menu a:hover {
+    background-color: #2b2b2b;
+    color: #3ec0e1;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+
+.navbar-default .dropdown-menu li {
+    height: 30px;
+    width: 230px;
+    padding: 0 10px;
+}
+
+.navbar-default .dropdown-menu a {
+    color: #3ec0e1;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 13px;
+    height: 20px;
+}
+
+    .navbar-default .dropdown-menu a:hover {
+        color: #fff;
+    }
+
+.list-inline-variant-1 li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/*Account Management Nav-bar*/
+.nav-tabs li.active a{
+    color:#fff;
+}
+
+.nav-tabs li.active a:focus{
+    color:#fff;
+}
+
+.nav-tabs li.active a:hover{
+    color:#fff;
+}
+
+.nav-tabs .dropdown-menu{
+    background: #2B2B2B;
+}
+
+.nav-tabs .dropdown-menu li.active a{
+    background: #2B2B2B;
+}
+
+.nav-tabs .dropdown-menu li a:hover{
+    color:#3ec0e1;
+}
+
+#account-details input[disabled]{
+    background: #aaa;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+    }
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-header-social-media {
+        display: block;
+        float:right;
+    }
+
+        .navbar-default .navbar-header-social-media a {
+            height: 50px;
+            width: 50px;
+        }
+
+    .navbar-default .navbar-social-media {
+        display: none;
+    }
+    .block-banner {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrap, .wrap-1 {
+        padding: 6px 7px 7px;
+    }
+
+    .row {
+        margin-right: 0px;
+    }
+}

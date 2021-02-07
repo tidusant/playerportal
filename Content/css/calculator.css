@@ -1,0 +1,32 @@
+#calcdiv {
+    background-image: url('https://wysotes.com/Content/images/PAYOUT_CALC.png');
+    background-repeat: no-repeat;
+    right: -50px;
+    top: 350px;
+    height: 540px;
+    width: 94px;
+    margin: 20;
+    padding: 0;
+    position: absolute;
+    z-index: 9999;
+    display:block;
+    }
+#calcarea {
+    color: #727070;
+    display: none;
+    float: left;
+    line-height: 18px;
+    margin: 125px 0 0 80px;
+}
+#btnarea{
+    width:70px;
+    height:100%;
+    float:left;
+    margin-left:40px
+}
+#winnings{
+    margin-top:74px;
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+}

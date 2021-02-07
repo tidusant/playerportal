@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E065F7D9-F8F5-46B5-8B76-2BCCF061A56D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlayerPortal</RootNamespace>
+    <AssemblyName>PlayerPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="QuantumBL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QuantumBL.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantumDL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QuantumDL.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantumModels, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QuantumModels.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantumUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QuantumUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="WalletAPI.Casino.QuantumBL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\WalletAPI.Casino.QuantumBL.dll</HintPath>
+    </Reference>
+    <Reference Include="WalletAPI.Casino.QuantumDL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\WalletAPI.Casino.QuantumDL.dll</HintPath>
+    </Reference>
+    <Reference Include="WalletAPI.Casino.QuantumModels, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\WalletAPI.Casino.QuantumModels.dll</HintPath>
+    </Reference>
+    <Reference Include="WalletAPI.Casino.QuantumUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\WalletAPI.Casino.QuantumUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GamesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\GameImage.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\calculator.css" />
+    <Content Include="Content\css\common.css" />
+    <Content Include="Content\css\grid.css" />
+    <Content Include="Content\css\hover-min.css" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\keno.css" />
+    <Content Include="Content\css\loadingmodal.css" />
+    <Content Include="Content\css\lotto.css" />
+    <Content Include="Content\css\membercenter.css" />
+    <Content Include="Content\css\newbankpage.css" />
+    <Content Include="Content\css\normalize.css" />
+    <Content Include="Content\css\select2.css" />
+    <Content Include="Content\css\select2.min.css" />
+    <Content Include="Content\css\site-styles.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="Content\images\Baccarat.svg" />
+    <Content Include="Content\images\RouletteWheel.svg" />
+    <Content Include="Content\images\slider-1.jpg" />
+    <Content Include="Content\images\slider-1a.jpg" />
+    <Content Include="Content\images\slider-2.jpg" />
+    <Content Include="Content\images\slider-21a.jpg" />
+    <Content Include="Content\images\slider-2a.jpg" />
+    <Content Include="Content\images\slider-3a.jpg" />
+    <Content Include="Content\images\slider-4a.jpg" />
+    <Content Include="Content\images\slider-5a.jpg" />
+    <Content Include="Content\images\slider-6a.jpg" />
+    <Content Include="Content\images\slider-9.jpg" />
+    <Content Include="Content\images\slider_12a.jpg" />
+    <Content Include="Content\images\tdlogoweb.png" />
+    <Content Include="Content\mobilecss\introjs.css" />
+    <Content Include="Content\mobilecss\layer.css" />
+    <Content Include="Content\mobilecss\main.css" />
+    <Content Include="Content\mobilecss\swiper.min.css" />
+    <Content Include="Content\mobileimages\1star.png" />
+    <Content Include="Content\mobileimages\2star.png" />
+    <Content Include="Content\mobileimages\3star.png" />
+    <Content Include="Content\mobileimages\4star.png" />
+    <Content Include="Content\mobileimages\5star.png" />
+    <Content Include="Content\mobileimages\6star.png" />
+    <Content Include="Content\mobileimages\about_img_certificate_big.jpg" />
+    <Content Include="Content\mobileimages\ag_new.png" />
+    <Content Include="Content\mobileimages\aogro.png" />
+    <Content Include="Content\mobileimages\banner-index-044ca66baef2d33d8f6a346f086c776b1.jpg" />
+    <Content Include="Content\mobileimages\banner-index-1e9503eae46b387b5f400c67f57ee2535.jpg" />
+    <Content Include="Content\mobileimages\banner-index-299833405942db56559a4d08d71468440.jpg" />
+    <Content Include="Content\mobileimages\banner-index-3138472e0864497be4eb49bdff5bfd40f.jpg" />
+    <Content Include="Content\mobileimages\bg.jpg" />
+    <Content Include="Content\mobileimages\bg1.png" />
+    <Content Include="Content\mobileimages\btn-bg.png" />
+    <Content Include="Content\mobileimages\btn.png" />
+    <Content Include="Content\mobileimages\ebet.jpg" />
+    <Content Include="Content\mobileimages\furf.png" />
+    <Content Include="Content\mobileimages\gaming.png" />
+    <Content Include="Content\mobileimages\hdst.png" />
+    <Content Include="Content\mobileimages\home.png" />
+    <Content Include="Content\mobileimages\hrcls.png" />
+    <Content Include="Content\mobileimages\icon08.png" />
+    <Content Include="Content\mobileimages\icon1.png" />
+    <Content Include="Content\mobileimages\icon11.png" />
+    <Content Include="Content\mobileimages\icon111.png" />
+    <Content Include="Content\mobileimages\icon2.png" />
+    <Content Include="Content\mobileimages\icon21.png" />
+    <Content Include="Content\mobileimages\icon3.png" />
+    <Content Include="Content\mobileimages\icon31.png" />
+    <Content Include="Content\mobileimages\icon4.png" />
+    <Content Include="Content\mobileimages\icon41.png" />
+    <Content Include="Content\mobileimages\icon42.png" />
+    <Content Include="Content\mobileimages\icon5.png" />
+    <Content Include="Content\mobileimages\icon6.png" />
+    <Content Include="Content\mobileimages\icon7.png" />
+    <Content Include="Content\mobileimages\icon8.png" />
+    <Content Include="Content\mobileimages\icon88.png" />
+    <Content Include="Content\mobileimages\icon9.png" />
+    <Content Include="Content\mobileimages\icon_crown.png" />
+    <Content Include="Content\mobileimages\icon_gift.png" />
+    <Content Include="Content\mobileimages\icon_line.png" />
+    <Content Include="Content\mobileimages\icon_menu01.png" />
+    <Content Include="Content\mobileimages\icon_promotion.png" />
+    <Content Include="Content\mobileimages\icon_register.png" />
+    <Content Include="Content\mobileimages\img1.png" />
+    <Content Include="Content\mobileimages\laptop.png" />
+    <Content Include="Content\mobileimages\logo4.png" />
+    <Content Include="Content\mobileimages\logout.png" />
+    <Content Include="Content\mobileimages\slider-21a.jpg" />
+    <Content Include="Content\mobileimages\slider-2a.jpg" />
+    <Content Include="Content\mobileimages\slider-6a.jpg" />
+    <Content Include="Content\mobileimages\slider-9.jpg" />
+    <Content Include="Content\mobileimages\slider2-1.png" />
+    <Content Include="Content\mobileimages\slider2-2.png" />
+    <Content Include="Content\mobileimages\slider2-3.png" />
+    <Content Include="Content\mobileimages\slider_12a.jpg" />
+    <Content Include="Content\mobileimages\tdlogo.png" />
+    <Content Include="Content\mobileimages\tdlogoweb.png" />
+    <Content Include="Content\mobileimages\tdmenu.png" />
+    <Content Include="Content\mobileimages\thao1.png" />
+    <Content Include="Content\mobileimages\thao2.png" />
+    <Content Include="Content\yamm3\gulpfile.js" />
+    <Content Include="Content\yamm3\index.html" />
+    <Content Include="Content\yamm3\LICENSE.txt" />
+    <Content Include="Content\yamm3\yamm\yamm.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\ai.0.22.19-build00125.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Content\.DS_Store" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="Content\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="Content\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="Content\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="Content\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Content\fonts\MaterialIcons-Regular.ijmap" />
+    <Content Include="Content\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Content\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Content\fonts\MaterialIcons-Regular.woff2" />
+    <Content Include="Content\yamm3\.bowerrc" />
+    <Content Include="Content\yamm3\.gitignore" />
+    <Content Include="Content\yamm3\bower.json" />
+    <Content Include="Content\yamm3\composer.json" />
+    <Content Include="Content\yamm3\package.json" />
+    <Content Include="Content\yamm3\README.md" />
+    <Content Include="Content\yamm3\yamm\yamm.less" />
+    <Content Include="Content\yamm3\yamm\yamm.styl" />
+    <Content Include="Content\yamm3\yamm\_yamm.scss" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\AutoFill\media\js\AutoFill.min.js.gz" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColReorder\media\js\ColReorder.min.js.gz" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColVis\media\js\ColVis.min.js.gz" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\FixedColumns\media\js\FixedColumns.min.js.gz" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\Scroller\media\js\dataTables.scroller.min.js.gz" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\TableTools\media\js\TableTools.min.js.gz" />
+    <Content Include="Scripts\datatables-bs3\images\Thumbs.db" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\PlayerPortal.pubxml" />
+    <Content Include="Scripts\DataTables-1.9.4\docs\media\js\doc.js" />
+    <Content Include="Scripts\DataTables-1.9.4\docs\media\js\jquery.js" />
+    <Content Include="Scripts\DataTables-1.9.4\docs\media\js\shBrushJScript.js" />
+    <Content Include="Scripts\DataTables-1.9.4\docs\media\js\shCore.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\AutoFill\media\docs\media\js\doc.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\AutoFill\media\docs\media\js\jquery.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\AutoFill\media\docs\media\js\shBrushJScript.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\AutoFill\media\docs\media\js\shCore.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\AutoFill\media\js\AutoFill.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\AutoFill\media\js\AutoFill.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColReorder\media\docs\media\js\doc.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColReorder\media\docs\media\js\jquery.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColReorder\media\docs\media\js\shBrushJScript.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColReorder\media\docs\media\js\shCore.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColReorder\media\js\ColReorder.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColReorder\media\js\ColReorder.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColVis\media\docs\media\js\doc.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColVis\media\docs\media\js\jquery.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColVis\media\docs\media\js\shBrushJScript.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColVis\media\docs\media\js\shCore.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColVis\media\js\ColVis.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\ColVis\media\js\ColVis.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\CurrencySorter\CurrencySort.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\FixedColumns\docs\media\js\doc.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\FixedColumns\docs\media\js\jquery.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\FixedColumns\docs\media\js\shBrushJScript.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\FixedColumns\docs\media\js\shCore.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\FixedColumns\media\js\FixedColumns.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\FixedColumns\media\js\FixedColumns.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\Scroller\media\docs\media\js\doc.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\Scroller\media\docs\media\js\jquery.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\Scroller\media\docs\media\js\shBrushJScript.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\Scroller\media\docs\media\js\shCore.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\Scroller\media\js\dataTables.scroller.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\Scroller\media\js\dataTables.scroller.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\TableTools\media\js\TableTools.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\TableTools\media\js\TableTools.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\extras\TableTools\media\js\ZeroClipboard.js" />
+    <Content Include="Scripts\DataTables-1.9.4\media\js\jquery.dataTables.js" />
+    <Content Include="Scripts\DataTables-1.9.4\media\js\jquery.dataTables.min.js" />
+    <Content Include="Scripts\DataTables-1.9.4\media\js\jquery.js" />
+    <Content Include="Scripts\datatables-bs3\css\dataTables.bootstrap.css" />
+    <Content Include="Scripts\datatables-bs3\css\datatables.css" />
+    <Content Include="Scripts\datatables-bs3\images\sort_asc.png" />
+    <Content Include="Scripts\datatables-bs3\images\sort_asc_disabled.png" />
+    <Content Include="Scripts\datatables-bs3\images\sort_both.png" />
+    <Content Include="Scripts\datatables-bs3\images\sort_desc.png" />
+    <Content Include="Scripts\datatables-bs3\images\sort_desc_disabled.png" />
+    <Content Include="Scripts\datatables-bs3\js\dataTables.bootstrap.js" />
+    <Content Include="Scripts\datatables-bs3\js\datatables.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\featherlight\featherlight.css" />
+    <Content Include="Scripts\featherlight\featherlight.js" />
+    <Content Include="Scripts\index.d.ts" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery.cycle2.carousel.js" />
+    <Content Include="Scripts\jquery.cycle2.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\Account.js" />
+    <Content Include="Scripts\js\accountmanagement.js" />
+    <Content Include="Scripts\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\cart.js" />
+    <Content Include="Scripts\js\Casino.js" />
+    <Content Include="Scripts\js\core.min.js" />
+    <Content Include="Scripts\js\forgot-password.js" />
+    <Content Include="Scripts\js\Games.js" />
+    <Content Include="Scripts\js\globals.js" />
+    <Content Include="Scripts\js\html5shiv.min.js" />
+    <Content Include="Scripts\js\jstorage.js" />
+    <Content Include="Scripts\js\login.js" />
+    <Content Include="Scripts\js\lottery-keno.js" />
+    <Content Include="Scripts\js\lottery-standard.js" />
+    <Content Include="Scripts\js\Lottery.js" />
+    <Content Include="Scripts\js\Lotto-BigBall.js" />
+    <Content Include="Scripts\js\Lotto-Keno.js" />
+    <Content Include="Scripts\js\Lotto-Standard.js" />
+    <Content Include="Scripts\js\Lotto-Timer.js" />
+    <Content Include="Scripts\js\paycalc.js" />
+    <Content Include="Scripts\js\pointer-events.min.js" />
+    <Content Include="Scripts\js\porthole\example\abc.com\index.html" />
+    <Content Include="Scripts\js\porthole\example\abc.com\js\porthole.js" />
+    <Content Include="Scripts\js\porthole\example\abc.com\js\porthole.min.js" />
+    <Content Include="Scripts\js\porthole\example\abc.com\proxy.html" />
+    <Content Include="Scripts\js\porthole\example\demo.auberger.com\porthole\index.html" />
+    <Content Include="Scripts\js\porthole\example\demo.auberger.com\porthole\proxy.html" />
+    <Content Include="Scripts\js\porthole\example\sandbox.ternarylabs.com\porthole\index.html" />
+    <Content Include="Scripts\js\porthole\example\sandbox.ternarylabs.com\porthole\js\porthole.js" />
+    <Content Include="Scripts\js\porthole\example\sandbox.ternarylabs.com\porthole\js\porthole.min.js" />
+    <Content Include="Scripts\js\porthole\example\sandbox.ternarylabs.com\porthole\proxy.html" />
+    <Content Include="Scripts\js\porthole\example\xyz.com\index.html" />
+    <Content Include="Scripts\js\porthole\example\xyz.com\proxy.html" />
+    <Content Include="Scripts\js\porthole\jsdoc\321b1cb2a3.html" />
+    <Content Include="Scripts\js\porthole\jsdoc\68d8de1e8a.html" />
+    <Content Include="Scripts\js\porthole\jsdoc\6db8242258.html" />
+    <Content Include="Scripts\js\porthole\jsdoc\index.html" />
+    <Content Include="Scripts\js\porthole\jsdoc\module-Porthole.html" />
+    <Content Include="Scripts\js\porthole\jsdoc\styles\jsdoc-default.css" />
+    <Content Include="Scripts\js\porthole\jsdoc\styles\node-dark.css" />
+    <Content Include="Scripts\js\porthole\Lobby.js" />
+    <Content Include="Scripts\js\porthole\spec\javascripts\helpers\SpecHelper.js" />
+    <Content Include="Scripts\js\porthole\spec\javascripts\WindowProxyDispatcherSpec.js" />
+    <Content Include="Scripts\js\porthole\spec\javascripts\WindowProxyHTML5Spec.js" />
+    <Content Include="Scripts\js\porthole\spec\javascripts\WindowProxyLegacySpec.js" />
+    <Content Include="Scripts\js\porthole\spec\javascripts\WindowProxySpec.js" />
+    <Content Include="Scripts\js\porthole\src\porthole.js" />
+    <Content Include="Scripts\js\porthole\src\porthole.min.js" />
+    <Content Include="Scripts\js\porthole\src\proxy.html" />
+    <Content Include="Scripts\js\reset-password.js" />
+    <Content Include="Scripts\js\ResetPassword.js" />
+    <Content Include="Scripts\js\ResizeSensor.js" />
+    <Content Include="Scripts\js\Results.js" />
+    <Content Include="Scripts\js\script.js" />
+    <Content Include="Scripts\js\select2.js" />
+    <Content Include="Scripts\js\select2.min.js" />
+    <Content Include="Scripts\js\siteImage.js" />
+    <Content Include="Scripts\js\validator.js" />
+    <Content Include="Scripts\js\wallet.js" />
+    <Content Include="Scripts\js\winnings.js" />
+    <Content Include="Scripts\mobilejs\app.js" />
+    <Content Include="Scripts\mobilejs\external-lib.js" />
+    <Content Include="Scripts\mobilejs\global.js" />
+    <Content Include="Scripts\mobilejs\layer.js" />
+    <Content Include="Scripts\mobilejs\zepto.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Lobby.cshtml" />
+    <Content Include="Views\Shared\menu.cshtml" />
+    <Content Include="Views\Shared\_KioskLayout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Account\AccountManagement.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\PasswordReset.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Games\Casino.cshtml" />
+    <Content Include="Views\Games\Keno.cshtml" />
+    <Content Include="Views\Games\KenoWinningNumbers.cshtml" />
+    <Content Include="Views\Games\Lotto.cshtml" />
+    <Content Include="Views\Games\LottoWinningNumbers.cshtml" />
+    <Content Include="Views\Games\WinningNumbers.cshtml" />
+    <Content Include="Views\Kiosk\Casino.cshtml" />
+    <Content Include="Views\Kiosk\Index.cshtml" />
+    <Content Include="Views\Kiosk\Login.cshtml" />
+    <Content Include="Views\Kiosk\Lotto.cshtml" />
+    <Content Include="Views\Kiosk\WinningNumbers.cshtml" />
+    <Content Include="Scripts\js\porthole\.gitmodules" />
+    <Content Include="Scripts\js\porthole\.rvmrc" />
+    <Content Include="Scripts\js\porthole\bower.json" />
+    <Content Include="Scripts\js\porthole\config\jsdoc.conf.json" />
+    <Content Include="Scripts\js\porthole\config\jslint.yml" />
+    <Content Include="Scripts\js\porthole\Gemfile" />
+    <Content Include="Scripts\js\porthole\Gemfile.lock" />
+    <Content Include="Scripts\js\porthole\LICENSE" />
+    <Content Include="Scripts\js\porthole\Rakefile" />
+    <Content Include="Scripts\js\porthole\README.md" />
+    <Content Include="Scripts\js\porthole\spec\javascripts\support\jasmine.yml" />
+    <Content Include="Scripts\js\porthole\spec\javascripts\support\jasmine_runner.rb" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Cardgame.cshtml" />
+    <Content Include="Views\Home\Cardgame.mobile.cshtml" />
+    <Content Include="Views\Home\Index.mobile.cshtml" />
+    <Content Include="Views\Home\Slotgame.cshtml" />
+    <Content Include="Views\Home\Slotgame.mobile.cshtml" />
+    <Content Include="Views\Home\Transaction.mobile.cshtml" />
+    <Content Include="Views\Games\Casino.mobile.cshtml" />
+    <Content Include="Views\Games\Lotto.mobile.cshtml" />
+    <Content Include="Views\Account\Account.mobile.cshtml" />
+    <Content Include="Views\Account\AccountManagement.mobile.cshtml" />
+    <Content Include="Views\Account\Login.mobile.cshtml" />
+    <Content Include="Views\Shared\_Layout.mobile.cshtml" />
+    <Content Include="Views\Shared\_LayoutLobby.cshtml" />
+    <Content Include="Views\Shared\_LayoutOld.cshtml" />
+    <Content Include="Views\Shared\banner.cshtml" />
+    <Content Include="Views\Shared\banner.mobile.cshtml" />
+    <Content Include="Views\Kiosk\_LayoutLobby.cshtml" />
+    <Content Include="Scripts\mobilejs\integration.js.php" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\images\ie8-panel\" />
+    <Folder Include="Content\mobileimages\games\" />
+    <Folder Include="Content\mobileimages\slotgames\" />
+    <Folder Include="fonts\" />
+    <Folder Include="Views\Game\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64393</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64393/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
