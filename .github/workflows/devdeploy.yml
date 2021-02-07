@@ -21,7 +21,7 @@ jobs:
       branch: ${{steps.check.outputs.branch}}
     # Steps represent a sequence of tasks that will be executed as part of the jobtest
     steps:
-      - id: check
+      - id: checkdeploy
         name: check is Deploy    
         run: |           
           echo ${GITHUB_EVENT_PATH}
