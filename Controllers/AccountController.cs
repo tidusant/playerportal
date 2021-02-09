@@ -10,24 +10,17 @@ using PlayerPortal.Models;
 using System.Configuration;
 using System.Security.Cryptography;
 using System.Text;
-using System.Globalization;
-using WalletAPI.Casino.QuantumBL;
-using WalletAPI.Casino.QuantumUtility;
-using System.Reflection;
 
 namespace PlayerPortal.Controllers
 {
-    // [Authorize]
+    [Authorize]
     public class AccountController : Controller
     {
-        //public AccountController()
-        //    : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
-        //{
-        //}test
         public AccountController()
-            //: this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
+            : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
         {
         }
+
         public AccountController(UserManager<ApplicationUser> userManager)
         {
             UserManager = userManager;
@@ -84,201 +77,39 @@ namespace PlayerPortal.Controllers
             return View();
         }
 
-
-        // method to Get secret key from database according to their CafeID
-        private string CafeWiseSecertKey(int CafeID)
+        public class RequestLogin
         {
-            string Key = string.Empty;
-            try
-            {
-                TraceLog.logger.LogInfo(typeof(string), string.Format(CultureInfo.InvariantCulture, "Called {2} function ::{0} {1}.", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString(), MethodBase.GetCurrentMethod().Name));
-                CafeBAL objCafe = new CafeBAL();
-                // Key = objCafe.GetCafeSecertKey(CafeID);
-                TraceLog.logger.LogInfo(typeof(string), string.Format(CultureInfo.InvariantCulture, "END {2} function ::{0} {1}.", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString(), MethodBase.GetCurrentMethod().Name));
-            }
-            catch (Exception ex)
-            {
-                // TraceLog.logger.LogInfo(typeof(string), );
-            }
-            return Key;
-        }
 
-
-        [HttpPost]
-        public JsonResult LoginPlayer(RequestLogin obj)
-        {
-            ResLogin Res = new ResLogin();
-            string EncryptSecretKey = string.Empty;
-            string CafeID = string.Empty;
-            //TraceLog.logger.LogInfo(typeof(string), string.Format(CultureInfo.InvariantCulture, "Called {2} function ::{0} {1}.", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString(), MethodBase.GetCurrentMethod().Name));
-            try
-            {
-                string SecretKey = ConfigurationManager.AppSettings.Get("Secret");
-                CafeID = ConfigurationManager.AppSettings.Get("CafeID");
-                //  TraceLog.logger.LogInfo(typeof(string), "CafeID: - " + CafeID);
-                // string SecretKey = CafeWiseSecertKey(Convert.ToInt16(CafeID));
-                //TraceLog.logger.LogInfo(typeof(string), "SecretKey: - " + SecretKey);
-
-                byte[] temp;
-                SHA1 sha = new SHA1CryptoServiceProvider();
-                // This is one implementation of the abstract class SHA1.
-                var json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
-                temp = sha.ComputeHash(Encoding.UTF8.GetBytes(Encryption.Encrypt(SecretKey) + json));
-                //temp = sha.ComputeHash(Encoding.UTF8.GetBytes(SecretKey + json));
-                EncryptSecretKey = String.Join("", temp.Select(p => p.ToString("x2")).ToArray());
-
-                //TraceLog.logger.LogInfo(typeof(string), "EncryptSecretKey: - " + EncryptSecretKey);
-                // Res.Key = EncryptSecretKey;
-                // Res.TerminalIP = GetIPAddress();
-
-            }
-            catch (Exception ex)
-            {
-
-            }
-            return Json(new { Key = EncryptSecretKey, TerminalIP = GetIPAddress(), CafeID = CafeID });
-        }
-        
-
-
-        [HttpPost]
-        public string GetPlayerDetails(RequestGetPlayerSetails obj)
-        {
-            string EncryptSecretKey = string.Empty;
-            string CafeID = ConfigurationManager.AppSettings.Get("CafeID");
-            string SecretKey = ConfigurationManager.AppSettings.Get("Secret");
-            byte[] temp;
-            SHA1 sha = new SHA1CryptoServiceProvider();
-            // This is one implementation of the abstract class SHA1.
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
-            temp = sha.ComputeHash(Encoding.UTF8.GetBytes(Encryption.Encrypt(SecretKey) + json));
-            //temp = sha.ComputeHash(Encoding.UTF8.GetBytes(SecretKey + json));
-            EncryptSecretKey = String.Join("", temp.Select(p => p.ToString("x2")).ToArray());
-
-            return EncryptSecretKey;
-        }
-
-        [HttpPost]
-        public string LogoutPlayer(RequestLogoutPlayer obj)
-        {
-            string EncryptSecretKey = string.Empty;
-            string CafeID = ConfigurationManager.AppSettings.Get("CafeID");
-            string SecretKey = ConfigurationManager.AppSettings.Get("Secret");
-            byte[] temp;
-            SHA1 sha = new SHA1CryptoServiceProvider();
-            // This is one implementation of the abstract class SHA1.
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
-            temp = sha.ComputeHash(Encoding.UTF8.GetBytes(Encryption.Encrypt(SecretKey) + json));
-            //temp = sha.ComputeHash(Encoding.UTF8.GetBytes(SecretKey + json));
-            EncryptSecretKey = String.Join("", temp.Select(p => p.ToString("x2")).ToArray());
-            return EncryptSecretKey;
-            
-        }
-
-        [HttpPost]
-        public string Launch(RequestLaunchGame obj)
-        {
-            string EncryptSecretKey = string.Empty;
-            string CafeID = ConfigurationManager.AppSettings.Get("CafeID");
-            string SecretKey = ConfigurationManager.AppSettings.Get("Secret");
-            byte[] temp;
-            SHA1 sha = new SHA1CryptoServiceProvider();
-            // This is one implementation of the abstract class SHA1.
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
-            temp = sha.ComputeHash(Encoding.UTF8.GetBytes(Encryption.Encrypt(SecretKey) + json));
-            //temp = sha.ComputeHash(Encoding.UTF8.GetBytes(SecretKey + json));
-            EncryptSecretKey = String.Join("", temp.Select(p => p.ToString("x2")).ToArray());
-            return EncryptSecretKey;
-        }
-
-        [HttpPost]
-        public string GetPlayerTransaction(RequestPlayerTrans obj)
-        {
-            string EncryptSecretKey = string.Empty;
-            string CafeID = ConfigurationManager.AppSettings.Get("CafeID");
-            string SecretKey = ConfigurationManager.AppSettings.Get("Secret");
-            byte[] temp;
-            SHA1 sha = new SHA1CryptoServiceProvider();
-            // This is one implementation of the abstract class SHA1.
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
-            temp = sha.ComputeHash(Encoding.UTF8.GetBytes(Encryption.Encrypt(SecretKey) + json));
-            //temp = sha.ComputeHash(Encoding.UTF8.GetBytes(SecretKey + json));
-            EncryptSecretKey = String.Join("", temp.Select(p => p.ToString("x2")).ToArray());
-
-            return EncryptSecretKey;
-        }
-
-
-        [HttpPost]
-        public string PlayerEditDetails(PlayerEditReq obj)
-        {
-            string EncryptSecretKey = string.Empty;
-            string CafeID = ConfigurationManager.AppSettings.Get("CafeID");
-            string SecretKey = ConfigurationManager.AppSettings.Get("Secret");
-            byte[] temp;
-            SHA1 sha = new SHA1CryptoServiceProvider();
-            // This is one implementation of the abstract class SHA1.
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
-            temp = sha.ComputeHash(Encoding.UTF8.GetBytes(Encryption.Encrypt(SecretKey) + json));
-            //temp = sha.ComputeHash(Encoding.UTF8.GetBytes(SecretKey + json));
-            EncryptSecretKey = String.Join("", temp.Select(p => p.ToString("x2")).ToArray());
-
-            return EncryptSecretKey;
-        }
-
-        protected string GetIPAddress()
-        {
-            System.Web.HttpContext context = System.Web.HttpContext.Current;
-            string ipAddress = context.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
-
-            if (!string.IsNullOrEmpty(ipAddress))
-            {
-                string[] addresses = ipAddress.Split(',');
-                if (addresses.Length != 0)
-                {
-                    return addresses[0];
-                }
-            }
-
-            return context.Request.ServerVariables["REMOTE_ADDR"];
-        }
-
-        public class PlayerEditReq
-        {
-            public Int64 PlayerID { get; set; }
-            public string Name { get; set; }
-            public string LastName { get; set; }
-            public string Employer { get; set; }
-            public string Phone { get; set; }
-            public string PhoneNumber { get; set; }
-            public string EmailId { get; set; }
-            public string Zipcode { get; set; }
-            public string AddressLine1 { get; set; }
-            public string AddressLine2 { get; set; }
-            public string AddressLine3 { get; set; }
-            public string Country { get; set; }
-            public string Address { get; set; }
-            public string City { get; set; }
-            public string State { get; set; }
-            public string AlternatePhone { get; set; }
-        }
-
-        public class RequestLaunchGame
-        {
-            public string OTP { get; set; }
-            public string CardNumber { get; set; }
-            public string Currency { get; set; }
             public string UserName { get; set; }
+            public string Password { get; set; }
+
 
         }
 
-        public class RequestPlayerTrans
+        //  Testing Purpose method
+        [HttpPost]
+        public JsonResult AjaxMethod(RequestLogin rl)
         {
-            public string StartDate { get; set; }
-            public string EndDate { get; set; }
-            public string CardNumber { get; set; }
+            RequestLogin objrel = new RequestLogin() { UserName = "sanidhya1", Password = "12345 1" };
+
+            return Json(objrel);
+        }
+
+        //   #endRegion
 
 
+        [HttpPost]
+        public string LoginPlayer(RequestLogin obj)
+        {
+            string SecretKey = ConfigurationManager.AppSettings.Get("Secret");
+            byte[] temp;
+            SHA1 sha = new SHA1CryptoServiceProvider();
+
+            // This is one implementation of the abstract class SHA1.
+            temp = sha.ComputeHash(Encoding.UTF8.GetBytes(SecretKey + obj));
+            string EncryptSecretKey = String.Join("", temp.Select(p => p.ToString("x2")).ToArray());
+
+            return EncryptSecretKey; // Json(EncryptSecretKey);
         }
 
         //
@@ -617,41 +448,5 @@ namespace PlayerPortal.Controllers
             }
         }
         #endregion
-
-
-        public class RequestLogin
-        {
-
-            public string UserName { get; set; }
-            public string Password { get; set; }
-
-
-        }
-
-        public class RequestLogoutPlayer
-        {
-
-            public string PlayerID { get; set; }
-            public string OTP { get; set; }
-
-
-        }
-
-        public class RequestGetPlayerSetails
-        {
-
-            public string CardNumber { get; set; }
-
-        }
-
-        public class ResLogin
-        {
-
-            public bool Wassuccessful { get; set; }
-            public string Key { get; set; }
-
-            public string TerminalIP { get; set; }
-        }
-
     }
 }
