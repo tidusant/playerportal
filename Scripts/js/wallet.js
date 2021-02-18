@@ -91,7 +91,7 @@ var walletInit = (function (baseUrl, _$, key, currencyCulture, languageCulture) 
     "use strict";
 
     // Private vars
-    var baseURI = baseUrl + "/api/PlayerPortalAPI";
+    var baseURI = baseUrl + "api/PlayerPortalAPI";
     var token = null;
     var fkey = key; // franchise key
     var coords = null;

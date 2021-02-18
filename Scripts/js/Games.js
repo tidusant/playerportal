@@ -33,7 +33,7 @@ var gamesInit = (function (baseUrl, _$, key, currencyCulture, languageCulture) {
     "use strict";
 
     // Private vars
-    var baseURI = baseUrl + "/api/PlayerPortalAPI"; //"/api/games/v2";
+    var baseURI = baseUrl + "api/PlayerPortalAPI"; //"/api/games/v2";
     var fkey = key; // franchise key
     var $ = _$;
     var cculture = currencyCulture || "en-US";

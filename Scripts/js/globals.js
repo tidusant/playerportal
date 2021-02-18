@@ -4,7 +4,7 @@
 //4LL LOTTERY/ SETUP GLOBALS
 var loturl = "https://lottery.tanddentertainment.com";
 var walurl = "https://wallet.tanddentertainment.com";
-var gamurl = "http://localhost:54957/";
+var gamurl = "http://localhost:64957/";
 var fkey = "B60B02E8-BF1A-489A-8234-F2BC3F7A69AE"; //Franchise Key
 
 // Display options

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using System.Data.SqlClient;
 
 [assembly: OwinStartupAttribute(typeof(PlayerPortal.Startup))]
 namespace PlayerPortal
